@@ -1,0 +1,26 @@
+# UE4 Project directories to ignore
+/3d_simulated_maze/maze_runner/Binaries
+/3d_simulated_maze/maze_runner/Build
+/3d_simulated_maze/maze_runner/DerivedDataCache
+/3d_simulated_maze/maze_runner/Intermediate
+/3d_simulated_maze/maze_runner/Saved
+/3d_simulated_maze/maze_runner/.kdev4
+/3d_simulated_maze/maze_runner/Content/StarterContent
+maze_runner/Binaries
+maze_runner/Build
+maze_runner/DerivedDataCache
+maze_runner/Intermediate
+maze_runner/Saved
+maze_runner/.kdev4
+maze_runner/Content/StarterContent
+maze_runner/Binaries
+/Build
+/DerivedDataCache
+/Intermediate
+/Saved
+/.kdev4
+/Content/StarterContent
+/3d_maze_simulation
+/3d_maze_simulation_2
+
+# based on https://answers.unrealengine.com/questions/16787/how-to-setup-git-for-an-ue4-project.html

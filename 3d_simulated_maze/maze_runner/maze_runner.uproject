@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{2070C960-1206-1219-000E-0322568D7346}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "maze_runner",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
