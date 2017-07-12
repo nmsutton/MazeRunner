@@ -1,0 +1,6 @@
+00:56:37 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+
+00:56:38 Build Finished (took 83ms)
+
