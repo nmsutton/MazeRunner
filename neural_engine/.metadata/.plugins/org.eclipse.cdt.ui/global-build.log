@@ -1,6 +1,49 @@
-00:56:33 **** Incremental Build of configuration Debug for project neural_engine ****
+00:54:40 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:54:44 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 make: Nothing to be done for 'all'.
-00:56:37 **** Incremental Build of configuration Debug for project neural_engine ****
+01:02:07 **** Clean-only build of configuration Debug for project neural_engine ****
+make clean 
+rm -rf  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o  ./src/hippocampus.d ./src/main.d ./src/motor_control.d ./src/vision.d  neural_engine
+ 
+01:02:11 **** Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+01:02:20 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 make: Nothing to be done for 'all'.

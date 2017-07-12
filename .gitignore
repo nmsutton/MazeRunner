@@ -76,3 +76,5 @@ DerivedDataCache/*
 
 neural_engine/references
 neural_engine/sample_views
+neural_engine/RemoteSystemsTempFiles
+neural_engine/.metadata
