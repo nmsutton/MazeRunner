@@ -4339,3 +4339,1308 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+23:53:37 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:53:57 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:54:50 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:54:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:55:06 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:55:17 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:55:31 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:55:46 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:55:55 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:56:10 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:56:17 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:56:24 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:56:36 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:57:13 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:57:55 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:58:04 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:58:57 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:59:48 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:00:14 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:02:10 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:03:22 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:14:02 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+00:28:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:131:15: warning: unused variable ‘x_p’ [-Wunused-variable]
+  double x, y, x_p, y_p;
+               ^
+../src/vision.cpp:131:20: warning: unused variable ‘y_p’ [-Wunused-variable]
+  double x, y, x_p, y_p;
+                    ^
+../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
+  double s_a = 1.0; // spatial aspect ratio
+         ^
+../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
+  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
+         ^
+../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
+  double w_s = 1.0; // wavelength of the sinusoidal factor
+         ^
+../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
+  double p_o = 0.0; // phase offset
+         ^
+../src/vision.cpp:143:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:145:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:33:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:168:60: error: no match for call to ‘(cv::Point2f {aka cv::Point_<float>}) (float, float)’
+   src_center(image_result.cols/2.0F, image_result.rows/2.0F);
+                                                            ^
+src/subdir.mk:27: recipe for target 'src/vision.o' failed
+make: *** [src/vision.o] Error 1
+00:44:44 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:168:58: error: no match for call to ‘(cv::Point2f {aka cv::Point_<float>}) (double, double)’
+   src_center(image_result.cols/2.0, image_result.rows/2.0);
+                                                          ^
+src/subdir.mk:27: recipe for target 'src/vision.o' failed
+make: *** [src/vision.o] Error 1
+00:45:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:137:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:139:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:46:25 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:59: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                           ^
+../src/vision.cpp:99:83: warning: left operand of comma operator has no effect [-Wunused-value]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                   ^
+../src/vision.cpp:89:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[8];
+         ^
+../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:137:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:139:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
+../src/vision.cpp:99:75: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                           ^
+../src/vision.cpp:99:102: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
+                                                                                                      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 

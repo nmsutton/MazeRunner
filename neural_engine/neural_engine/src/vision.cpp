@@ -120,50 +120,64 @@ Mat vision::test_gabor_filter(Mat image, Mat image_result, int region_x, int reg
 	 */
 
 	// gabor variables
-	double sigmaX = 5.0;
-	double sigmaY= 10.0;
-	double k = (1.0/1.5); // preferred spatial frequency
+	double sigmaX = 7.0;
+	double sigmaY= 14.0;
+	double k = (1.0/1.2); // preferred spatial frequency
 	double phi = 0;//1-pi;//0; // preferred spatial phase
-	//double a = 1.0/15.0;
 	double pi = M_PI;
 	double gabor = 0.0;
-
-	double x, y, x_p, y_p;
+	double x, y;
 	double total_rotations = 8.0;
-	double s_a = 1.0; // spatial aspect ratio
-	double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
-	double w_s = 1.0; // wavelength of the sinusoidal factor
-	double p_o = 0.0; // phase offset
 	double rot = 0.0; // rotation, orientation of the normal to the parallel stripes of a Gabor function
+	double offset = 40; // offset to shift gabor from center at 0 to center + and offset on x and y
 	// opencv variables
 	double pixel_brightness;
-	double max_brightness;
+	double max_brightness = 255;
 	double similarity_score;
 	double similarity_matches[(int) total_rotations];// = new double[total_rotations];
 	double prior_similarity = 0.0;
 	int highest_similarity = 0;
+	//Point2f src_center;
+	Mat rot_mat;
+	Mat rotated_result;
 
 	for (int rotation = 0; rotation < total_rotations; rotation++) {
 		similarity_score = 0;
+
 		for (int i = region_x; i < length_x; i++) {
 			for (int j = region_y; j < length_y; j++) {
 				pixel_brightness = (double) image.at<uchar>(j,i);
-				x = i-40;
-				y = j-40;
+				x = i-offset;
+				y = j-offset;
+
 				// compute gabor filter
 				gabor = (1/(2*pi*sigmaX*sigmaY))*exp(-(pow(x,2)/(2*pow(sigmaX,2)))-(pow(y,2)/(2*pow(sigmaY,2))))*cos((k*x)-phi);
-				x_p = x*cos(rot)+y*sin(rot);
-				y_p = -x*sin(rot)+y*cos(rot);
-				//gabor = exp(-(pow(x_p,2)+pow(s_a,2)*pow(y_p,2))/(2*pow(s_d,2)))*cos((2*pi*(x_p/w_s))+p_o);
-				similarity_score = max_brightness = abs(pixel_brightness - gabor);
-				gabor = (gabor * 10000) + 130;//20;
+
+				// Exponent used below to enhance contrast
+				gabor = pow((gabor * 10000),1.99) + 0;//20;
 
 				image_result.at<uchar>(j,i) = (int) gabor;//125;//(uchar) gabor;
-				if ((int) gabor > 15) {
-				//cout<<(int) gabor<<"\n";
-				}
+
+				/*if ((int) gabor > 15) {
+					cout<<(int) gabor<<"\n";
+				}*/
 			}
 		}
+		// rotate
+		rot = rotation * (360/total_rotations);
+		Point2f src_center(image_result.cols/2.0F, image_result.rows/2.0F);
+		rot_mat = getRotationMatrix2D(src_center, rot, 1.0);
+		warpAffine(image_result, rotated_result, rot_mat, image_result.size());
+
+		// score
+		for (int i = region_x; i < length_x; i++) {
+			for (int j = region_y; j < length_y; j++) {
+				gabor = (double) rotated_result.at<uchar>(j, i);
+				similarity_score = similarity_score + max_brightness - abs(pixel_brightness - gabor);
+			}
+		}
+		cout<<similarity_score<<"\t"<<rot<<"\n";
+
 		// find closest match
 		similarity_matches[rotation] = similarity_score;
 		if (similarity_score > prior_similarity) {
@@ -172,7 +186,7 @@ Mat vision::test_gabor_filter(Mat image, Mat image_result, int region_x, int reg
 		prior_similarity = similarity_score;
 	}
 
-	return image_result;
+	return rotated_result;
 }
 
 

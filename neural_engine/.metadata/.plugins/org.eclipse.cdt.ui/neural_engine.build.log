@@ -1,4 +1,4 @@
-21:58:40 **** Incremental Build of configuration Debug for project neural_engine ****
+00:46:25 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/vision.cpp
 Invoking: GCC C++ Compiler
@@ -14,28 +14,10 @@ g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/v
   double similarity_matches[(int) total_rotations];// = new double[8];
          ^
 ../src/vision.cpp: In member function ‘cv::Mat vision::test_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
-../src/vision.cpp:131:15: warning: variable ‘x_p’ set but not used [-Wunused-but-set-variable]
-  double x, y, x_p, y_p;
-               ^
-../src/vision.cpp:131:20: warning: variable ‘y_p’ set but not used [-Wunused-but-set-variable]
-  double x, y, x_p, y_p;
-                    ^
-../src/vision.cpp:133:9: warning: unused variable ‘s_a’ [-Wunused-variable]
-  double s_a = 1.0; // spatial aspect ratio
-         ^
-../src/vision.cpp:134:9: warning: unused variable ‘s_d’ [-Wunused-variable]
-  double s_d = 1.0; // sigma/standard deviation of the Gaussian envelope
-         ^
-../src/vision.cpp:135:9: warning: unused variable ‘w_s’ [-Wunused-variable]
-  double w_s = 1.0; // wavelength of the sinusoidal factor
-         ^
-../src/vision.cpp:136:9: warning: unused variable ‘p_o’ [-Wunused-variable]
-  double p_o = 0.0; // phase offset
-         ^
-../src/vision.cpp:142:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+../src/vision.cpp:137:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
   double similarity_matches[(int) total_rotations];// = new double[total_rotations];
          ^
-../src/vision.cpp:144:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+../src/vision.cpp:139:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
   int highest_similarity = 0;
       ^
 ../src/vision.cpp: In member function ‘int vision::gabor_filter(cv::Mat, int, int, int, int)’:
@@ -53,5 +35,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o .
 Finished building target: neural_engine
  
 
-21:58:41 Build Finished (took 889ms)
+00:46:26 Build Finished (took 882ms)
 
