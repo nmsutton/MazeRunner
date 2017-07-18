@@ -15,8 +15,7 @@ public:
     vision();
     ~vision();
     void stream_input();
-    int gabor_filter(Mat image, int region_x, int region_y, int length_x, int length_y);
-    Mat test_gabor_filter(Mat image, Mat image_result, int region_x, int region_y, int length_x, int length_y);
+    Mat compare_gabor_filter(Mat image, Mat image_result, int region_x, int region_y, int length_x, int length_y);
 };
 
 #endif // VISION_H

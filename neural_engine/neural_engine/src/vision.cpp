@@ -40,7 +40,7 @@ void vision::stream_input() {
     cvtColor(image, image, COLOR_BGR2GRAY);
     cvtColor(image_result, image_result, COLOR_BGR2GRAY);
 
-    image_result = vision::test_gabor_filter(image, image_result, 0, 0, res_y, res_x);
+    image_result = vision::compare_gabor_filter(image, image_result, 0, 0, res_y, res_x);
 
     if(! image.data )                              // Check for invalid input
     {
@@ -55,63 +55,7 @@ void vision::stream_input() {
 
 }
 
-/*void resize_image(Mat image, int x_size, int y_size) {
-	int interpolation = INTER_AREA;
-	double factor = 0.0;
-
-	Size dsize = Size(x_size, y_size);
-	resize(image, image, dsize, factor, factor, interpolation);
-	//resize(image, image, dsize);
-}*/
-
-int vision::gabor_filter(Mat image, int region_x, int region_y, int length_x, int length_y) {
-	/*
-	 * gabor rotation that most closely matches image sample region is assigned the
-	 * gabor match result
-	 *
-	 * reference: https://stackoverflow.com/questions/7899108/opencv-get-pixel-channel-value-from-mat-image
-	 */
-
-	// gabor variables
-	double sigmaX = 1.0;
-	double sigmaY= 2.0;
-	double k = (1.0/0.5); // preferred spatial frequency
-	double phi = 0;//1-pi;//0; // preferred spatial phase
-	//double a = 1.0/15.0;
-	double pi = M_PI;
-	double gabor = 0.0;
-	double x, y;
-	double total_rotations = 8.0;
-	// opencv variables
-	double pixel_brightness;
-	double max_brightness;
-	double similarity_score;
-	double similarity_matches[(int) total_rotations];// = new double[8];
-	double prior_similarity = 0.0;
-	int highest_similarity = 0;
-
-	for (int rotation = 0; rotation < total_rotations; rotation++) {
-		similarity_score = 0;
-		for (int i = region_x; i < length_x; i++) {
-			for (int j = region_y; j < length_y; j++) {
-				pixel_brightness = (double) image.at<uchar>(j,i);
-				// compute gabor filter
-				gabor = (1/(2*pi*sigmaX-sigmaY))*exp(((-(pow(x,2)))/(2*sigmaX,2))-(pow(y,2)/(2*sigmaY,2)))*cos((k*x)-phi);
-				similarity_score = max_brightness = abs(pixel_brightness - gabor);
-			}
-		}
-		// find closest match
-		similarity_matches[rotation] = similarity_score;
-		if (similarity_score > prior_similarity) {
-			highest_similarity = rotation;
-		}
-		prior_similarity = similarity_score;
-	}
-
-	return highest_similarity;
-}
-
-Mat vision::test_gabor_filter(Mat image, Mat image_result, int region_x, int region_y, int length_x, int length_y) {
+Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int region_y, int length_x, int length_y) {
 	/*
 	 * gabor rotation that most closely matches image sample region is assigned the
 	 * gabor match result
@@ -140,6 +84,7 @@ Mat vision::test_gabor_filter(Mat image, Mat image_result, int region_x, int reg
 	//Point2f src_center;
 	Mat rot_mat;
 	Mat rotated_result;
+	Mat gabor_match;
 
 	for (int rotation = 0; rotation < total_rotations; rotation++) {
 		similarity_score = 0;
@@ -182,11 +127,12 @@ Mat vision::test_gabor_filter(Mat image, Mat image_result, int region_x, int reg
 		similarity_matches[rotation] = similarity_score;
 		if (similarity_score > prior_similarity) {
 			highest_similarity = rotation;
+			gabor_match = rotated_result;
 		}
 		prior_similarity = similarity_score;
 	}
 
-	return rotated_result;
+	return gabor_match;
 }
 
 
