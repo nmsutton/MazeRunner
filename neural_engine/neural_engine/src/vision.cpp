@@ -41,7 +41,7 @@ void vision::stream_input() {
     Size image_result_size;
     // convert input into predefined size for processing
     resize(image, image, Size(res_y,res_x));
-    resize(image, image_result, Size(res_y,res_x));
+    resize(image, image_result, Size(sample_x,sample_y));
     resize(image, filtered_image, Size(res_y,res_x));
     //filtered_image.size() = Size(res_x, res_y);
     //resize()
@@ -54,7 +54,8 @@ void vision::stream_input() {
     	for (int vc = 0; vc < (visual_cols - 1); vc++) {
     		image_section = image(Range(sample_x*vr, sample_x*(vr+1)),Range(sample_y*vc, sample_y*(vc+1)));
     		//image_result = vision::compare_gabor_filter(image_section, image_result, 0, 0, res_y, res_x);
-    		image_result = vision::compare_gabor_filter(image_section, image_result, sample_x*vr, sample_y*vc, sample_x*(vr+1), sample_y*(vc+1));
+    		//image_result = vision::compare_gabor_filter(image_section, image_result, sample_x*vr, sample_y*vc, sample_x*(vr+1), sample_y*(vc+1));
+    		image_result = vision::compare_gabor_filter(image_section, image_result, 0, 0, sample_x, sample_y);
     		image_result_size = image_result.size();
 
         	//image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, sample_x, sample_y)));
