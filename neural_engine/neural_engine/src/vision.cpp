@@ -34,8 +34,8 @@ void vision::stream_input() {
     Mat image_result;
     Mat filtered_image;//(res_x, res_y, COLOR_BGR2GRAY);
     image = imread(imageName, IMREAD_COLOR );   // Read the file
-    int visual_rows = 4;//12;
-    int visual_cols = 4;//24;
+    int visual_rows = 13;//4;//12;
+    int visual_cols = 22;//4;//24;
     int sample_x = (int) res_x/12;//visual_rows;
     int sample_y = (int) res_y/24;//visual_cols;
     Size image_result_size;
@@ -59,12 +59,13 @@ void vision::stream_input() {
     		image_result_size = image_result.size();
 
         	//image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, sample_x, sample_y)));
-    		image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, image_result_size.width, image_result_size.height)));
+    		image_result.copyTo(filtered_image(Rect(sample_x*vc, sample_y*vr, image_result_size.width, image_result_size.height)));
     	}
 
 		cout<<"row "<<vr<<" processed\n";
     }
 
+    //cout<<image;
 
     if(! image.data )                              // Check for invalid input
     {
@@ -105,8 +106,8 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 	double max_brightness = 255;
 	double similarity_score;
 	double similarity_matches[(int) total_rotations];// = new double[total_rotations];
-	double prior_similarity = 0.0;
-	int highest_similarity = 0;
+	double greatest_similarity = 0.0;
+	//int highest_similarity = 0;
 	//Point2f src_center;
 	Mat rot_mat;
 	Mat rotated_result;
@@ -150,12 +151,14 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 		//cout<<similarity_score<<"\t"<<rot<<"\n";
 
 		// find closest match
-		similarity_matches[rotation] = similarity_score;
-		if (similarity_score > prior_similarity) {
-			highest_similarity = rotation;
-			gabor_match = rotated_result;
+		//similarity_matches[rotation] = similarity_score;
+		if (similarity_score > greatest_similarity) {
+			//highest_similarity = rotation;
+			rotated_result.copyTo(gabor_match);
+			greatest_similarity = similarity_score;
+			//cout<<"ss: "<<similarity_score<<" gs: "<<greatest_similarity<<" rot: "<<rot<<"\n";
 		}
-		prior_similarity = similarity_score;
+		//prior_similarity = similarity_score;
 	}
 
 	return gabor_match;

@@ -6584,3 +6584,616 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+15:48:29 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:49:00 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:49:20 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:49:32 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:49:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:50:10 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:50:32 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:50:47 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+15:51:02 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:06:27 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:45 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:07:04 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:07:20 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:07:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:09:31 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: variable ‘similarity_matches’ set but not used [-Wunused-but-set-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:15:03 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:15:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:25:30 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:39 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:47:49 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+../src/vision.cpp:109:6: warning: variable ‘highest_similarity’ set but not used [-Wunused-but-set-variable]
+  int highest_similarity = 0;
+      ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:53:15 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:54:03 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:54:56 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:56:44 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:57:18 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+16:58:23 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:00:35 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:01:49 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:20:16 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:20:41 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:21:10 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:21:48 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:21:57 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:22:04 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:22:29 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:22:52 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
