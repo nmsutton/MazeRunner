@@ -59,7 +59,7 @@ void vision::stream_input() {
     		image_result_size = image_result.size();
 
         	//image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, sample_x, sample_y)));
-    		image_result.copyTo(filtered_image(Rect(0, 0, image_result_size.width, image_result_size.height)));
+    		image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, image_result_size.width, image_result_size.height)));
     	}
 
 		cout<<"row "<<vr<<" processed\n";
