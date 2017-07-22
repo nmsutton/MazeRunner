@@ -1,10 +1,13 @@
-17:22:52 **** Incremental Build of configuration Debug for project neural_engine ****
+19:52:37 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/vision.cpp
 Invoking: GCC C++ Compiler
 g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
 ../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
-../src/vision.cpp:108:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
   double similarity_matches[(int) total_rotations];// = new double[total_rotations];
          ^
 Finished building: ../src/vision.cpp
@@ -15,5 +18,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o .
 Finished building target: neural_engine
  
 
-17:22:53 Build Finished (took 867ms)
+19:52:38 Build Finished (took 927ms)
 

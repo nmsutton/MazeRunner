@@ -35,7 +35,7 @@ void vision::stream_input() {
     Mat filtered_image;//(res_x, res_y, COLOR_BGR2GRAY);
     image = imread(imageName, IMREAD_COLOR );   // Read the file
     int visual_rows = 13;//4;//12;
-    int visual_cols = 22;//4;//24;
+    int visual_cols = 25;//4;//24;
     int sample_x = (int) res_x/12;//visual_rows;
     int sample_y = (int) res_y/24;//visual_cols;
     Size image_result_size;
@@ -53,13 +53,12 @@ void vision::stream_input() {
     for (int vr = 0; vr < (visual_rows - 1); vr++) {
     	for (int vc = 0; vc < (visual_cols - 1); vc++) {
     		image_section = image(Range(sample_x*vr, sample_x*(vr+1)),Range(sample_y*vc, sample_y*(vc+1)));
-    		//image_result = vision::compare_gabor_filter(image_section, image_result, 0, 0, res_y, res_x);
-    		//image_result = vision::compare_gabor_filter(image_section, image_result, sample_x*vr, sample_y*vc, sample_x*(vr+1), sample_y*(vc+1));
-    		image_result = vision::compare_gabor_filter(image_section, image_result, 0, 0, sample_x, sample_y);
-    		image_result_size = image_result.size();
 
-        	//image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, sample_x, sample_y)));
-    		image_result.copyTo(filtered_image(Rect(sample_x*vc, sample_y*vr, image_result_size.width, image_result_size.height)));
+    		image_result = vision::compare_gabor_filter(image_section, image_result, 0, 0, sample_x, sample_y);
+    		image_result_size = image_result.size();//Size(sample_x, sample_y);//image_result.size();
+
+        	image_result.copyTo(filtered_image(Rect(image_result_size.width*vc, image_result_size.height*vr, image_result_size.width, image_result_size.height)));
+    		//image_result.copyTo(filtered_image(Rect(sample_x*vc, sample_y*vr, sample_x, sample_y)));
     	}
 
 		cout<<"row "<<vr<<" processed\n";
@@ -112,6 +111,7 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 	Mat rot_mat;
 	Mat rotated_result;
 	Mat gabor_match;
+	Mat kernel1;
 
 	for (int rotation = 0; rotation < total_rotations; rotation++) {
 		similarity_score = 0;
@@ -145,7 +145,7 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 		for (int i = region_x; i < length_x; i++) {
 			for (int j = region_y; j < length_y; j++) {
 				gabor = (double) rotated_result.at<uchar>(j, i);
-				similarity_score = similarity_score + max_brightness - abs(pixel_brightness - gabor);
+				similarity_score = similarity_score + abs(pixel_brightness - gabor);//max_brightness - abs(pixel_brightness - gabor);
 			}
 		}
 		//cout<<similarity_score<<"\t"<<rot<<"\n";
@@ -154,8 +154,29 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 		//similarity_matches[rotation] = similarity_score;
 		if (similarity_score > greatest_similarity) {
 			//highest_similarity = rotation;
-			rotated_result.copyTo(gabor_match);
-			greatest_similarity = similarity_score;
+
+			//rotated_result.copyTo(gabor_match);
+			//filter2D(image, gabor_match, CV_32F, rotated_result);
+			int THETA_ROTATIONS = 4;
+			double theta[THETA_ROTATIONS] ;
+			theta[0] = 0;
+			theta[1] = 45;
+			theta[2] = 90;
+			theta[3] = 135;
+			/*theta[4] = 180;
+			theta[5] = 225;
+			theta[6] = 270;
+			theta[7] = 315;*/
+			double sig = 5;
+			double lm = 8;//14;//8;
+			double gm = .5;//(1.0/1.2);
+			double ps = 0;
+			for (int j = 0; j<THETA_ROTATIONS; j++)
+			{
+				kernel1 = cv::getGaborKernel(cv::Size(90,80), sig, theta[j], lm, gm, ps, CV_32F);
+				filter2D(image, gabor_match, CV_64F, kernel1);
+				greatest_similarity = similarity_score;
+			}
 			//cout<<"ss: "<<similarity_score<<" gs: "<<greatest_similarity<<" rot: "<<rot<<"\n";
 		}
 		//prior_similarity = similarity_score;
