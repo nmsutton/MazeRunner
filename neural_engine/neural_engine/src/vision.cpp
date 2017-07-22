@@ -21,26 +21,49 @@ vision::~vision()
 void vision::stream_input() {
 
 	String imageName("../sample_views/Screenshot from 2017-07-07 21-25-07.png"); // by default
-
+	/*
 	int res_x = 80;
 	int res_y = 80;
-
-	/*
-	int res_x = 1080;
-	int res_y = 1900;
 	*/
 
+	int res_x = 1080;
+	int res_y = 1900;
+
     Mat image;
+    Mat image_section;
     Mat image_result;
+    Mat filtered_image;//(res_x, res_y, COLOR_BGR2GRAY);
     image = imread(imageName, IMREAD_COLOR );   // Read the file
+    int visual_rows = 4;//12;
+    int visual_cols = 4;//24;
+    int sample_x = (int) res_x/12;//visual_rows;
+    int sample_y = (int) res_y/24;//visual_cols;
+    Size image_result_size;
     // convert input into predefined size for processing
     resize(image, image, Size(res_y,res_x));
     resize(image, image_result, Size(res_y,res_x));
+    resize(image, filtered_image, Size(res_y,res_x));
+    //filtered_image.size() = Size(res_x, res_y);
+    //resize()
     // only using grey scale
     cvtColor(image, image, COLOR_BGR2GRAY);
     cvtColor(image_result, image_result, COLOR_BGR2GRAY);
+    cvtColor(filtered_image, filtered_image, COLOR_BGR2GRAY);
 
-    image_result = vision::compare_gabor_filter(image, image_result, 0, 0, res_y, res_x);
+    for (int vr = 0; vr < (visual_rows - 1); vr++) {
+    	for (int vc = 0; vc < (visual_cols - 1); vc++) {
+    		image_section = image(Range(sample_x*vr, sample_x*(vr+1)),Range(sample_y*vc, sample_y*(vc+1)));
+    		//image_result = vision::compare_gabor_filter(image_section, image_result, 0, 0, res_y, res_x);
+    		image_result = vision::compare_gabor_filter(image_section, image_result, sample_x*vr, sample_y*vc, sample_x*(vr+1), sample_y*(vc+1));
+    		image_result_size = image_result.size();
+
+        	//image_result.copyTo(filtered_image(Rect(sample_x*vr, sample_y*vc, sample_x, sample_y)));
+    		image_result.copyTo(filtered_image(Rect(0, 0, image_result_size.width, image_result_size.height)));
+    	}
+
+		cout<<"row "<<vr<<" processed\n";
+    }
+
 
     if(! image.data )                              // Check for invalid input
     {
@@ -49,10 +72,12 @@ void vision::stream_input() {
 
     namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
     //imshow( "Display window", image );                   // Show our image inside it.
-    imshow( "Display window", image_result );                   // Show our image inside it.
+    imshow( "Display window", filtered_image );                   // Show our image inside it.
 
     waitKey(0);
 
+
+    cout<<"finished processing";
 }
 
 Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int region_y, int length_x, int length_y) {
@@ -121,7 +146,7 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 				similarity_score = similarity_score + max_brightness - abs(pixel_brightness - gabor);
 			}
 		}
-		cout<<similarity_score<<"\t"<<rot<<"\n";
+		//cout<<similarity_score<<"\t"<<rot<<"\n";
 
 		// find closest match
 		similarity_matches[rotation] = similarity_score;
