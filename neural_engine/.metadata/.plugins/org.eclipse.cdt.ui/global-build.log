@@ -7705,3 +7705,683 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+00:24:21 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp:4:17: error: ‘hippocampus’ is not a namespace-name
+ using namespace hippocampus;
+                 ^
+../src/hippocampus.cpp:4:28: error: expected namespace-name before ‘;’ token
+ using namespace hippocampus;
+                            ^
+../src/hippocampus.cpp:6:13: error: expected unqualified-id before ‘)’ token
+ hippocampus()
+             ^
+../src/hippocampus.cpp:10:14: error: declaration of ‘~hippocampus’ as non-member
+ ~hippocampus()
+              ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:25:45 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:9:28: error: ISO C++ forbids declaration of ‘create_grid_population’ with no type [-fpermissive]
+     create_grid_population();
+                            ^
+../src/hippocampus.cpp:13:37: error: ISO C++ forbids declaration of ‘create_grid_population’ with no type [-fpermissive]
+ hippocampus::create_grid_population()
+                                     ^
+../src/hippocampus.cpp: In member function ‘int hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:27:41 **** Clean-only build of configuration Debug for project neural_engine ****
+make clean 
+rm -rf  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o  ./src/hippocampus.d ./src/main.d ./src/motor_control.d ./src/vision.d  neural_engine
+ 
+00:28:17 **** Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:9:41: error: ISO C++ forbids declaration of ‘create_grid_population’ with no type [-fpermissive]
+     hippocampus::create_grid_population();
+                                         ^
+../src/hippocampus.h:9:5: error: extra qualification ‘hippocampus::’ on member ‘create_grid_population’ [-fpermissive]
+     hippocampus::create_grid_population();
+     ^
+../src/hippocampus.cpp:13:37: error: ISO C++ forbids declaration of ‘create_grid_population’ with no type [-fpermissive]
+ hippocampus::create_grid_population()
+                                     ^
+../src/hippocampus.cpp: In member function ‘int hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+00:29:04 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:49:09 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:12:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:23:12: error: prototype for ‘grid_cells hippocampus::create_grid_population()’ does not match any in class ‘hippocampus’
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+ grid_cells hippocampus::create_grid_population()
+            ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:10:16: error: candidate is: hippocampus::grid_cells hippocampus::create_grid_population()
+     grid_cells create_grid_population();
+                ^
+make: *** [src/hippocampus.o] Error 1
+00:54:24 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:46: error: expected primary-expression before ‘]’ token
+  grid_cells grid_population = new grid_cells[];
+                                              ^
+../src/hippocampus.cpp:21:46: error: conversion from ‘hippocampus::grid_cells*’ to non-scalar type ‘hippocampus::grid_cells’ requested
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:54:49 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:46: error: expected primary-expression before ‘]’ token
+  grid_cells grid_population = new grid_cells[];
+                                              ^
+../src/hippocampus.cpp:21:46: error: conversion from ‘hippocampus::grid_cells*’ to non-scalar type ‘hippocampus::grid_cells’ requested
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+00:55:11 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:48: error: expected primary-expression before ‘]’ token
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+  grid_cells * grid_population = new grid_cells[];
+                                                ^
+../src/hippocampus.cpp:23:9: error: could not convert ‘grid_population’ from ‘hippocampus::grid_cells*’ to ‘hippocampus::grid_cells’
+  return grid_population;
+         ^
+make: *** [src/hippocampus.o] Error 1
+00:59:26 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:29: error: storage size of ‘grid_population’ isn’t known
+  grid_cells grid_population[];// = new grid_cells[];
+                             ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+01:05:53 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:29: error: storage size of ‘grid_population’ isn’t known
+  grid_cells grid_population[];// = new grid_cells[];
+                             ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:20:22 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:52: error: array must be initialized with a brace-enclosed initializer
+  grid_cells grid_population[25] = new grid_cells[25];
+                                                    ^
+../src/hippocampus.cpp:23:9: error: could not convert ‘(hippocampus::grid_cells*)(& grid_population)’ from ‘hippocampus::grid_cells*’ to ‘hippocampus::grid_cells’
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:20:35 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:52: error: array must be initialized with a brace-enclosed initializer
+  grid_cells grid_population[25] = new grid_cells[25];
+                                                    ^
+../src/hippocampus.cpp:23:9: error: could not convert ‘(hippocampus::grid_cells*)(& grid_population)’ from ‘hippocampus::grid_cells*’ to ‘hippocampus::grid_cells’
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:21:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:23:9: error: could not convert ‘(hippocampus::grid_cells*)(& grid_population)’ from ‘hippocampus::grid_cells*’ to ‘hippocampus::grid_cells’
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:22:10 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:15: error: expected unqualified-id before ‘[’ token
+     grid_cells[] create_grid_population();
+               ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:24: error: expected unqualified-id before ‘[’ token
+ hippocampus::grid_cells[] hippocampus::create_grid_population()
+                        ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:22:37 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:15: error: expected unqualified-id before ‘[’ token
+     grid_cells[] create_grid_population();
+               ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:24: error: expected unqualified-id before ‘[’ token
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+ hippocampus::grid_cells[25] hippocampus::create_grid_population()
+                        ^
+make: *** [src/hippocampus.o] Error 1
+01:22:53 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:15: error: expected unqualified-id before ‘[’ token
+     grid_cells[] create_grid_population();
+               ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:61: error: no ‘hippocampus::grid_cells hippocampus::create_grid_population()’ member function declared in class ‘hippocampus’
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+ hippocampus::grid_cells hippocampus::create_grid_population()
+                                                             ^
+make: *** [src/hippocampus.o] Error 1
+01:23:52 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:15: error: expected unqualified-id before ‘[’ token
+     grid_cells[] create_grid_population();
+               ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:7: error: expected unqualified-id before ‘[’ token
+ double[] hippocampus::create_grid_population()
+       ^
+make: *** [src/hippocampus.o] Error 1
+01:24:02 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:11: error: expected unqualified-id before ‘[’ token
+     double[] create_grid_population();
+           ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:7: error: expected unqualified-id before ‘[’ token
+ double[] hippocampus::create_grid_population()
+       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:24:09 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:7: error: expected unqualified-id before ‘[’ token
+ double[] hippocampus::create_grid_population()
+       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:24:16 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:23:9: error: cannot convert ‘double*’ to ‘double’ in return
+  return grid_population;
+         ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+01:24:37 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:10: error: prototype for ‘double* hippocampus::create_grid_population()’ does not match any in class ‘hippocampus’
+ double * hippocampus::create_grid_population()
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+          ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:12: error: candidate is: double hippocampus::create_grid_population()
+     double create_grid_population();
+            ^
+make: *** [src/hippocampus.o] Error 1
+01:24:45 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:23:9: error: cannot convert ‘double**’ to ‘double*’ in return
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:24:50 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:23:9: error: cannot convert ‘double**’ to ‘double*’ in return
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+  return grid_population;
+         ^
+make: *** [src/hippocampus.o] Error 1
+01:24:58 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:9: warning: address of local variable ‘grid_population’ returned [-Wreturn-local-addr]
+  double grid_population[25];// = new grid_cells[25];
+         ^
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+01:25:41 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:21:9: warning: address of local variable ‘grid_population’ returned [-Wreturn-local-addr]
+  double grid_population[25];// = new grid_cells[25];
+         ^
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+01:25:44 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+01:27:05 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:22:2: error: ‘double’ is not a template
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+  double<double[]> grid_population;
+  ^
+../src/hippocampus.cpp:24:9: error: cannot convert ‘double’ to ‘double*’ in return
+  return grid_population;
+         ^
+../src/hippocampus.cpp:21:9: warning: unused variable ‘grid_row’ [-Wunused-variable]
+  double grid_row[25];// = new grid_cells[25];
+         ^
+make: *** [src/hippocampus.o] Error 1
+01:27:14 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:22:2: error: ‘double’ is not a template
+  double<double> grid_population;
+  ^
+../src/hippocampus.cpp:24:9: error: cannot convert ‘double’ to ‘double*’ in return
+  return grid_population;
+         ^
+../src/hippocampus.cpp:21:9: warning: unused variable ‘grid_row’ [-Wunused-variable]
+  double grid_row[25];// = new grid_cells[25];
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:29:00 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:22:8: error: expected unqualified-id before ‘[’ token
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+  double[]<double> grid_population;
+        ^
+../src/hippocampus.cpp:24:9: error: ‘grid_population’ was not declared in this scope
+  return grid_population;
+         ^
+../src/hippocampus.cpp:21:9: warning: unused variable ‘grid_row’ [-Wunused-variable]
+  double grid_row[25];// = new grid_cells[25];
+         ^
+make: *** [src/hippocampus.o] Error 1
+01:30:01 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:23:9: error: cannot convert ‘double (*)[GRID_POPULATION_SIZE]’ to ‘double*’ in return
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:30:28 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:11: error: expected unqualified-id before ‘[’ token
+     double[] * create_grid_population(int GRID_POPULATION_SIZE);
+           ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:7: error: expected unqualified-id before ‘[’ token
+ double[] * hippocampus::create_grid_population(int GRID_POPULATION_SIZE)
+       ^
+make: *** [src/hippocampus.o] Error 1
+01:30:40 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:11: error: expected unqualified-id before ‘[’ token
+     double[][] create_grid_population(int GRID_POPULATION_SIZE);
+           ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:7: error: expected unqualified-id before ‘[’ token
+ double[] * hippocampus::create_grid_population(int GRID_POPULATION_SIZE)
+       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:31:58 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:7: error: expected unqualified-id before ‘[’ token
+ double[] * hippocampus::create_grid_population(int GRID_POPULATION_SIZE)
+       ^
+make: *** [src/hippocampus.o] Error 1
+01:32:14 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:8:6: warning: unused variable ‘GRID_POPULATION_SIZE’ [-Wunused-variable]
+  int GRID_POPULATION_SIZE = 25;
+      ^
+../src/hippocampus.cpp: In member function ‘double* hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:23:9: error: cannot convert ‘double (*)[GRID_POPULATION_SIZE]’ to ‘double*’ in return
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+17:29:10 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In member function ‘double** hippocampus::create_grid_population(int)’:
+../src/hippocampus.cpp:21:9: error: cannot convert ‘double (*)[GRID_POPULATION_SIZE]’ to ‘double**’ in return
+  return grid_population;
+         ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+17:32:47 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+17:36:24 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘double**’ to ‘double’ in assignment
+   new_pop = create_grid_population();
+           ^
+../src/hippocampus.cpp:11:28: error: cannot convert ‘double’ to ‘double**’ in assignment
+   grid_cell_populations[i] = new_pop;
+                            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+17:36:43 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
