@@ -8385,3 +8385,144 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+23:52:08 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:12:34: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’ in initialization
+  int active_grid_cell[2] = {{0,0}};
+                                  ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:10: error: prototype for ‘double** hippocampus::create_grid_population()’ does not match any in class ‘hippocampus’
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+ double** hippocampus::create_grid_population()
+          ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:18: error: candidate is: hippocampus::grid_cells** hippocampus::create_grid_population()
+     grid_cells** create_grid_population();
+                  ^
+make: *** [src/hippocampus.o] Error 1
+23:52:22 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:10: error: prototype for ‘double** hippocampus::create_grid_population()’ does not match any in class ‘hippocampus’
+ double** hippocampus::create_grid_population()
+          ^
+In file included from ../src/hippocampus.cpp:1:0:
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+../src/hippocampus.h:16:18: error: candidate is: hippocampus::grid_cells** hippocampus::create_grid_population()
+     grid_cells** create_grid_population();
+                  ^
+make: *** [src/hippocampus.o] Error 1
+23:54:00 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:10: error: prototype for ‘double** hippocampus::create_grid_population()’ does not match any in class ‘hippocampus’
+ double** hippocampus::create_grid_population()
+          ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:31: error: candidate is: hippocampus::grid_cells** hippocampus::create_grid_population()
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+     hippocampus::grid_cells** create_grid_population();
+                               ^
+make: *** [src/hippocampus.o] Error 1
+23:54:16 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:31: error: extra qualification ‘hippocampus::’ on member ‘create_grid_population’ [-fpermissive]
+     hippocampus::grid_cells** hippocampus::create_grid_population();
+                               ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+../src/hippocampus.cpp: At global scope:
+../src/hippocampus.cpp:19:10: error: prototype for ‘double** hippocampus::create_grid_population()’ does not match any in class ‘hippocampus’
+ double** hippocampus::create_grid_population()
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+          ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:31: error: candidate is: hippocampus::grid_cells** hippocampus::create_grid_population()
+     hippocampus::grid_cells** hippocampus::create_grid_population();
+                               ^
+make: *** [src/hippocampus.o] Error 1
+23:54:33 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:31: error: extra qualification ‘hippocampus::’ on member ‘create_grid_population’ [-fpermissive]
+     hippocampus::grid_cells** hippocampus::create_grid_population();
+                               ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+../src/hippocampus.cpp: In member function ‘hippocampus::grid_cells** hippocampus::create_grid_population()’:
+../src/hippocampus.cpp:21:65: error: cannot convert ‘double**’ to ‘hippocampus::grid_cells**’ in initialization
+  grid_cells** grid_population = new double*[GRID_POPULATION_SIZE];
+                                                                 ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+23:54:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:31: error: extra qualification ‘hippocampus::’ on member ‘create_grid_population’ [-fpermissive]
+     hippocampus::grid_cells** hippocampus::create_grid_population();
+                               ^
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+23:55:26 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In constructor ‘hippocampus::hippocampus()’:
+../src/hippocampus.cpp:10:11: error: cannot convert ‘hippocampus::grid_cells**’ to ‘double**’ in assignment
+   new_pop = create_grid_population();
+           ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+23:55:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
