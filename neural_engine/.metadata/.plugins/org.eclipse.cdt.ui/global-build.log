@@ -9141,3 +9141,133 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+22:23:27 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void sys(const state_type&, hippocampus::state_type&, double)’:
+../src/hippocampus.cpp:37:26: error: no match for ‘operator/’ (operand types are ‘const state_type {aka const boost::array<double, 3ul>}’ and ‘double’)
+  dxdt = 3.0/(2.0*t*t) + x/(2.0*t);
+                          ^
+In file included from /usr/include/boost/numeric/ublas/traits.hpp:17:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:26,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/c++/5/complex:416:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator/(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:416:5: note:   template argument deduction/substitution failed:
+../src/hippocampus.cpp:37:33: note:   ‘const state_type {aka const boost::array<double, 3ul>}’ is not derived from ‘const std::complex<_Tp>’
+  dxdt = 3.0/(2.0*t*t) + x/(2.0*t);
+                                 ^
+In file included from /usr/include/boost/numeric/ublas/traits.hpp:17:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:26,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/c++/5/complex:425:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const std::complex<_Tp>&, const _Tp&)
+     operator/(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+/usr/include/c++/5/complex:425:5: note:   template argument deduction/substitution failed:
+../src/hippocampus.cpp:37:33: note:   ‘const state_type {aka const boost::array<double, 3ul>}’ is not derived from ‘const std::complex<_Tp>’
+  dxdt = 3.0/(2.0*t*t) + x/(2.0*t);
+                                 ^
+In file included from /usr/include/boost/numeric/ublas/traits.hpp:17:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:26,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/c++/5/complex:434:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const _Tp&, const std::complex<_Tp>&)
+     operator/(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:434:5: note:   template argument deduction/substitution failed:
+../src/hippocampus.cpp:37:33: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+  dxdt = 3.0/(2.0*t*t) + x/(2.0*t);
+                                 ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+22:24:27 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void sys(const state_type&, hippocampus::state_type&, double)’:
+../src/hippocampus.cpp:37:29: error: no match for ‘operator/’ (operand types are ‘const state_type {aka const boost::array<double, 3ul>}’ and ‘double’)
+  dxdt = 3.0 / (2.0*t*t) + x / (2.0*t);
+                             ^
+In file included from /usr/include/boost/numeric/ublas/traits.hpp:17:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:26,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/c++/5/complex:416:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator/(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:416:5: note:   template argument deduction/substitution failed:
+../src/hippocampus.cpp:37:37: note:   ‘const state_type {aka const boost::array<double, 3ul>}’ is not derived from ‘const std::complex<_Tp>’
+  dxdt = 3.0 / (2.0*t*t) + x / (2.0*t);
+                                     ^
+In file included from /usr/include/boost/numeric/ublas/traits.hpp:17:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:26,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/c++/5/complex:425:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const std::complex<_Tp>&, const _Tp&)
+     operator/(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+/usr/include/c++/5/complex:425:5: note:   template argument deduction/substitution failed:
+../src/hippocampus.cpp:37:37: note:   ‘const state_type {aka const boost::array<double, 3ul>}’ is not derived from ‘const std::complex<_Tp>’
+  dxdt = 3.0 / (2.0*t*t) + x / (2.0*t);
+                                     ^
+In file included from /usr/include/boost/numeric/ublas/traits.hpp:17:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:26,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/c++/5/complex:434:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator/(const _Tp&, const std::complex<_Tp>&)
+     operator/(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:434:5: note:   template argument deduction/substitution failed:
+../src/hippocampus.cpp:37:37: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+  dxdt = 3.0 / (2.0*t*t) + x / (2.0*t);
+                                     ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+22:24:35 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+22:44:39 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
