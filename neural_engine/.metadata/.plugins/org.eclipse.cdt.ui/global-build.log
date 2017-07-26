@@ -8526,3 +8526,618 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+00:28:35 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:30:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp:4:17: error: ‘boost’ has not been declared
+ using namespace boost::numeric::odeint;
+                 ^
+../src/hippocampus.cpp:4:33: error: ‘odeint’ is not a namespace-name
+ using namespace boost::numeric::odeint;
+                                 ^
+../src/hippocampus.cpp:4:39: error: expected namespace-name before ‘;’ token
+ using namespace boost::numeric::odeint;
+                                       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:31:08 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:46:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:32:68: error: ‘stepper_type’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                    ^
+../src/hippocampus.cpp:32:74: error: ‘rhs’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                          ^
+../src/hippocampus.cpp:32:103: error: ‘write_cout’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                                                       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:47:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:32:68: error: ‘stepper_type’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                    ^
+../src/hippocampus.cpp:32:74: error: ‘rhs’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                          ^
+../src/hippocampus.cpp:32:103: error: ‘write_cout’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                                                       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:49:12 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:28:28: error: ISO C++ forbids declaration of ‘time_step’ with no type [-fpermissive]
+     hippocampus::time_step();
+                            ^
+../src/hippocampus.h:28:5: error: extra qualification ‘hippocampus::’ on member ‘time_step’ [-fpermissive]
+     hippocampus::time_step();
+     ^
+../src/hippocampus.h:29:22: error: ISO C++ forbids declaration of ‘rhs’ with no type [-fpermissive]
+     hippocampus::rhs();
+                      ^
+../src/hippocampus.h:29:5: error: extra qualification ‘hippocampus::’ on member ‘rhs’ [-fpermissive]
+     hippocampus::rhs();
+     ^
+../src/hippocampus.h:30:29: error: ISO C++ forbids declaration of ‘write_cout’ with no type [-fpermissive]
+     hippocampus::write_cout();
+                             ^
+../src/hippocampus.h:30:5: error: extra qualification ‘hippocampus::’ on member ‘write_cout’ [-fpermissive]
+     hippocampus::write_cout();
+     ^
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:32:68: error: ‘stepper_type’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                    ^
+../src/hippocampus.cpp:32:74: error: ‘rhs’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                          ^
+../src/hippocampus.cpp:32:103: error: ‘write_cout’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                                                       ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:49:45 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:32:68: error: ‘stepper_type’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                    ^
+../src/hippocampus.cpp:32:74: error: ‘rhs’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                          ^
+../src/hippocampus.cpp:32:103: error: ‘write_cout’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                                                       ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+00:50:35 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:42:68: error: ‘stepper_type’ was not declared in this scope
+  integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+                                                                    ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:52:36 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+01:01:32 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+01:29:52 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:45:24: error: ‘t’ was not declared in this scope
+  rk.do_step( rhs , x , t , dt );
+                        ^
+../src/hippocampus.cpp:45:28: error: ‘dt’ was not declared in this scope
+  rk.do_step( rhs , x , t , dt );
+                            ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+01:30:34 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:42:39: warning: typedef ‘stepper_type’ locally defined but not used [-Wunused-local-typedefs]
+  typedef runge_kutta_dopri5< double > stepper_type;
+                                       ^
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+01:30:53 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+19:57:05 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+20:01:11 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+20:18:42 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+20:31:28 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:20:17: error: invalid use of non-static data member ‘hippocampus::state_type’
+   runge_kutta4< state_type > rk;
+                 ^
+../src/hippocampus.h:16:25: note: declared here
+  boost::array<double,3> state_type;
+                         ^
+../src/hippocampus.h:20:17: error: invalid use of non-static data member ‘hippocampus::state_type’
+   runge_kutta4< state_type > rk;
+                 ^
+../src/hippocampus.h:16:25: note: declared here
+  boost::array<double,3> state_type;
+                         ^
+../src/hippocampus.h:20:17: error: invalid use of non-static data member ‘hippocampus::state_type’
+   runge_kutta4< state_type > rk;
+                 ^
+../src/hippocampus.h:16:25: note: declared here
+  boost::array<double,3> state_type;
+                         ^
+../src/hippocampus.h:20:28: error: template argument 1 is invalid
+   runge_kutta4< state_type > rk;
+                            ^
+../src/hippocampus.h:20:28: error: template argument 3 is invalid
+../src/hippocampus.h:20:28: error: template argument 5 is invalid
+../src/hippocampus.h:20:28: error: template argument 6 is invalid
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:44:29: error: invalid use of non-static data member ‘hippocampus::state_type’
+  runge_kutta4< hippocampus::state_type > rk;
+                             ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:25: note: declared here
+  boost::array<double,3> state_type;
+                         ^
+../src/hippocampus.cpp:44:40: error: template argument 1 is invalid
+  runge_kutta4< hippocampus::state_type > rk;
+                                        ^
+../src/hippocampus.cpp:44:40: error: template argument 3 is invalid
+../src/hippocampus.cpp:44:40: error: template argument 5 is invalid
+../src/hippocampus.cpp:44:40: error: template argument 6 is invalid
+../src/hippocampus.cpp:47:5: error: request for member ‘do_step’ in ‘rk’, which is of non-class type ‘int’
+  rk.do_step( rhs , x , t , dt );
+     ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+20:50:13 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:15:44: error: template argument 2 is invalid
+  typedef boost::array<double, std::size_t 3> state_type;
+                                            ^
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, int, double, int, double, boost::numeric::odeint::range_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = int; Value = double; Deriv = int; Time = double; Algebra = boost::numeric::odeint::range_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, int, double, int, double, boost::numeric::odeint::range_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = int; Value = double; Deriv = int; Time = double; Algebra = boost::numeric::odeint::range_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of non-const reference of type ‘double&’ from an rvalue of type ‘double’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+20:50:33 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+21:03:37 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h: In function ‘void time_step()’:
+../src/hippocampus.h:14:48: error: ‘typedef class boost::array<double, 3ul> hippocampus::state_type’ is private
+  typedef boost::array<double, (std::size_t) 3> state_type;
+                                                ^
+../src/hippocampus.cpp:44:2: error: within this context
+  runge_kutta4< hippocampus::state_type > rk;
+  ^
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+21:03:55 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:44:16: error: ‘state_type’ is not a member of ‘hippocampus’
+  runge_kutta4< hippocampus::state_type > rk;
+                ^
+../src/hippocampus.cpp:44:16: error: ‘state_type’ is not a member of ‘hippocampus’
+../src/hippocampus.cpp:44:40: error: template argument 1 is invalid
+  runge_kutta4< hippocampus::state_type > rk;
+                                        ^
+../src/hippocampus.cpp:44:40: error: template argument 3 is invalid
+../src/hippocampus.cpp:44:40: error: template argument 5 is invalid
+../src/hippocampus.cpp:44:40: error: template argument 6 is invalid
+../src/hippocampus.cpp:47:5: error: request for member ‘do_step’ in ‘rk’, which is of non-class type ‘int’
+  rk.do_step( rhs , x , t , dt );
+     ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+21:22:26 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+21:28:22 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+21:29:33 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:47:31:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+21:43:19 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:41:9: warning: unused variable ‘x’ [-Wunused-variable]
+  double x = 0.0;
+         ^
+../src/hippocampus.cpp:45:9: warning: unused variable ‘t’ [-Wunused-variable]
+  double t = 0;
+         ^
+../src/hippocampus.cpp:46:9: warning: unused variable ‘dt’ [-Wunused-variable]
+  double dt = 0.01;
+         ^
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:43:45 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:41:9: warning: unused variable ‘x’ [-Wunused-variable]
+  double x = 0.0;
+         ^
+../src/hippocampus.cpp:45:9: warning: unused variable ‘t’ [-Wunused-variable]
+  double t = 0;
+         ^
+../src/hippocampus.cpp:46:9: warning: unused variable ‘dt’ [-Wunused-variable]
+  double dt = 0.01;
+         ^
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:44:13 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+21:45:37 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:47:15: error: invalid use of non-static data member ‘hippocampus::rk’
+  hippocampus::rk.do_step( rhs , x , t , dt );
+               ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:29: note: declared here
+  runge_kutta4< state_type > rk;
+                             ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+21:46:47 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(double, double&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:49:33:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘double&’ from expression of type ‘boost::array<double, 3ul>’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+make: *** [src/hippocampus.o] Error 1
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+21:51:19 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from /usr/include/boost/numeric/odeint/stepper/euler.hpp:23:0,
+                 from /usr/include/boost/numeric/odeint.hpp:27,
+                 from ../src/hippocampus.h:7,
+                 from ../src/hippocampus.cpp:1:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp: In instantiation of ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step_v1(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(const boost::array<double, 3ul>&, boost::array<double, 3ul>&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’:
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:114:19:   required from ‘void boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::do_step(System, StateInOut&, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type, boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type) [with System = void (*)(const boost::array<double, 3ul>&, boost::array<double, 3ul>&, double); StateInOut = double; Stepper = boost::numeric::odeint::explicit_generic_rk<4ul, 4ul, boost::array<double, 3ul>, double, boost::array<double, 3ul>, double, boost::numeric::odeint::array_algebra, boost::numeric::odeint::default_operations, boost::numeric::odeint::initially_resizer>; short unsigned int Order = 4u; State = boost::array<double, 3ul>; Value = double; Deriv = boost::array<double, 3ul>; Time = double; Algebra = boost::numeric::odeint::array_algebra; Operations = boost::numeric::odeint::default_operations; Resizer = boost::numeric::odeint::initially_resizer; boost::numeric::odeint::explicit_stepper_base<Stepper, Order, State, Value, Deriv, Time, Algebra, Operations, Resizer>::time_type = double]’
+../src/hippocampus.cpp:55:33:   required from here
+/usr/include/boost/numeric/odeint/stepper/base/explicit_stepper_base.hpp:229:12: error: invalid initialization of reference of type ‘const boost::array<double, 3ul>&’ from expression of type ‘double’
+         sys( x , m_dxdt.m_v ,t );
+            ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+22:18:18 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+22:18:35 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+22:19:09 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:57:2: error: ‘rk’ was not declared in this scope
+  rk.do_step( sys , x , t , dt );
+  ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+22:19:36 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp:5:17: error: ‘hippocampus’ is not a namespace-name
+ using namespace hippocampus;
+                 ^
+../src/hippocampus.cpp:5:28: error: expected namespace-name before ‘;’ token
+ using namespace hippocampus;
+                            ^
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:58:2: error: ‘rk’ was not declared in this scope
+  rk.do_step( sys , x , t , dt );
+  ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+22:20:21 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp: In function ‘void time_step()’:
+../src/hippocampus.cpp:57:15: error: invalid use of non-static data member ‘hippocampus::rk’
+  hippocampus::rk.do_step( sys , x , t , dt );
+               ^
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:16:29: note: declared here
+  runge_kutta4< state_type > rk;
+                             ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+22:20:55 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
