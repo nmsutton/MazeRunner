@@ -1,7 +1,9 @@
 #include "hippocampus.h"
+#include "matplotlibcpp.h"
 
 using namespace std;
 using namespace boost::numeric::odeint;
+namespace plt = matplotlibcpp;
 
 hippocampus::hippocampus()
 {
@@ -34,8 +36,14 @@ void rhs( const double x , double &dxdt , const double t )
 
 void sys( const hippocampus::state_type &x , hippocampus::state_type &dxdt , const double t )
 {
+	/*
+	 * https://math.stackexchange.com/questions/1009989/how-to-take-the-integral-of-a-derivative-to-obtain-desired-result
+	 * d(V)/d(t) = (-V(t) + W)/Z
+	 */
 	//dxdt = 3.0 / (2.0*t*t) + x / (2.0*t);
-	dxdt[0] = x[1];
+	double W = 10.0;
+	double Z = 0.02;
+	dxdt[0] = (x[1] + W) / Z;
 }
 
 void write_cout( const double &x , const double t )
@@ -47,8 +55,20 @@ void time_step() {
 	runge_kutta4< hippocampus::state_type > rk;
 	hippocampus::state_type x;
 	double t = 0;
-	const double dt = 0.01;
+	const double dt = 0.0025;
 	rk.do_step( sys , x , t , dt );
 
 	//integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
+}
+
+void hippocampus::spike_train() {
+	/*int time_span = 200;
+	for (int i = 0; i < time_span; i++) {
+		time_step();
+	}*/
+
+	std::vector<double> x1 = {{1, 2, 3, 4}};
+	plt::plot(x1);
+	plt::show();
+
 }

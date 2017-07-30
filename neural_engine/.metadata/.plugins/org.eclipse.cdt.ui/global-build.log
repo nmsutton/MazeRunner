@@ -9271,3 +9271,1534 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+22:45:20 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:30:24 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+23:58:32 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:17: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+makefile:45: recipe for target 'neural_engine' failed
+00:00:50 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:15:20: fatal error: Python.h: No such file or directory
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:02:12 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:15:20: fatal error: Python.h: No such file or directory
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+15:29:14 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:15:20: fatal error: Python.h: No such file or directory
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+15:31:20 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/hippocampus.o: In function `_import_array':
+/usr/include/python2.7/numpy/__multiarray_api.h:1451: undefined reference to `PyImport_ImportModule'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyExc_ImportError'
+makefile:45: recipe for target 'neural_engine' failed
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1458: undefined reference to `PyObject_GetAttrString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyExc_AttributeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1473: undefined reference to `PyCObject_Type'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1478: undefined reference to `PyCObject_AsVoidPtr'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyErr_Format'
+./src/hippocampus.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:185: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:186: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:191: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:192: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:194: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:195: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:197: undefined reference to `PyObject_Call'
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:74: undefined reference to `Py_SetProgramName'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:75: undefined reference to `Py_Initialize'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:78: undefined reference to `PyErr_Print'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:78: undefined reference to `PyExc_ImportError'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:78: undefined reference to `PyErr_SetString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:81: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:82: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:83: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:88: undefined reference to `PyImport_Import'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95: undefined reference to `PyObject_CallMethod'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:98: undefined reference to `PyImport_Import'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:103: undefined reference to `PyImport_Import'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:107: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:108: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:109: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:110: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:111: undefined reference to `PyObject_GetAttrString'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:112: more undefined references to `PyObject_GetAttrString' follow
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:148: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:149: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:150: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:151: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:152: undefined reference to `PyFunction_Type'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:153: more undefined references to `PyFunction_Type' follow
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:168: undefined reference to `PyTuple_New'
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::~_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:172: undefined reference to `Py_Finalize'
+./src/hippocampus.o: In function `matplotlibcpp::show()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:647: undefined reference to `PyObject_CallObject'
+./src/hippocampus.o: In function `bool matplotlibcpp::plot<double, double>(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:377: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:379: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:380: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:381: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:382: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:384: undefined reference to `PyObject_CallObject'
+./src/hippocampus.o: In function `bool matplotlibcpp::plot<double>(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:265: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:266: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:267: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:270: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:273: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:273: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:276: undefined reference to `PyObject_Call'
+./src/hippocampus.o: In function `bool matplotlibcpp::named_plot<double>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:451: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:452: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:452: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:457: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:459: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:460: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:461: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:462: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:464: undefined reference to `PyObject_Call'
+./src/main.o: In function `_import_array':
+/usr/include/python2.7/numpy/__multiarray_api.h:1451: undefined reference to `PyImport_ImportModule'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyExc_ImportError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1458: undefined reference to `PyObject_GetAttrString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyExc_AttributeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1473: undefined reference to `PyCObject_Type'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1478: undefined reference to `PyCObject_AsVoidPtr'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyErr_Format'
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:185: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:186: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:191: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:192: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:194: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:195: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:197: undefined reference to `PyObject_Call'
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:17: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+15:31:55 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/hippocampus.o: In function `_import_array':
+/usr/include/python2.7/numpy/__multiarray_api.h:1451: undefined reference to `PyImport_ImportModule'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyExc_ImportError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1458: undefined reference to `PyObject_GetAttrString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyExc_AttributeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1473: undefined reference to `PyCObject_Type'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1478: undefined reference to `PyCObject_AsVoidPtr'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyErr_Format'
+./src/hippocampus.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:185: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:186: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:191: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:192: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:194: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:195: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:197: undefined reference to `PyObject_Call'
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:74: undefined reference to `Py_SetProgramName'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:75: undefined reference to `Py_Initialize'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:78: undefined reference to `PyErr_Print'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:78: undefined reference to `PyExc_ImportError'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:78: undefined reference to `PyErr_SetString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:81: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:82: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:83: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:88: undefined reference to `PyImport_Import'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95: undefined reference to `PyObject_CallMethod'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:98: undefined reference to `PyImport_Import'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:103: undefined reference to `PyImport_Import'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:107: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:108: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:109: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:110: undefined reference to `PyObject_GetAttrString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:111: undefined reference to `PyObject_GetAttrString'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:112: more undefined references to `PyObject_GetAttrString' follow
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:148: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:149: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:150: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:151: undefined reference to `PyFunction_Type'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:152: undefined reference to `PyFunction_Type'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:153: more undefined references to `PyFunction_Type' follow
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:168: undefined reference to `PyTuple_New'
+./src/hippocampus.o: In function `matplotlibcpp::detail::_interpreter::~_interpreter()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:172: undefined reference to `Py_Finalize'
+./src/hippocampus.o: In function `matplotlibcpp::show()':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:647: undefined reference to `PyObject_CallObject'
+./src/hippocampus.o: In function `bool matplotlibcpp::plot<double, double>(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:377: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:379: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:380: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:381: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:382: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:384: undefined reference to `PyObject_CallObject'
+./src/hippocampus.o: In function `bool matplotlibcpp::plot<double>(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:265: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:266: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:267: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:270: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:273: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:273: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:276: undefined reference to `PyObject_Call'
+./src/hippocampus.o: In function `bool matplotlibcpp::named_plot<double>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:451: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:452: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:452: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:457: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:459: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:460: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:461: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:462: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:464: undefined reference to `PyObject_Call'
+./src/main.o: In function `_import_array':
+/usr/include/python2.7/numpy/__multiarray_api.h:1451: undefined reference to `PyImport_ImportModule'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyExc_ImportError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1455: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1458: undefined reference to `PyObject_GetAttrString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyExc_AttributeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1461: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1473: undefined reference to `PyCObject_Type'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1474: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1478: undefined reference to `PyCObject_AsVoidPtr'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1482: undefined reference to `PyErr_SetString'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1490: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1496: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1506: undefined reference to `PyErr_Format'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyExc_RuntimeError'
+/usr/include/python2.7/numpy/__multiarray_api.h:1518: undefined reference to `PyErr_Format'
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:185: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:186: undefined reference to `PyString_FromString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:188: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyFloat_FromDouble'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:189: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:191: undefined reference to `PyDict_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:192: undefined reference to `PyDict_SetItemString'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:194: undefined reference to `PyTuple_New'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:195: undefined reference to `PyTuple_SetItem'
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:197: undefined reference to `PyObject_Call'
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:17: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+15:52:45 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -Ipython2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -Ipython2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -Ipython2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -Ipython2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:17: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+makefile:45: recipe for target 'neural_engine' failed
+15:53:28 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -Ipython2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:18: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'neural_engine' failed
+make: *** [neural_engine] Error 1
+16:08:00 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -Ipython2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+makefile:45: recipe for target 'neural_engine' failed
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:18: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+16:09:52 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:18: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+21:55:25 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:18: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+21:55:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp: In function ‘int main(int, char**)’:
+../src/main.cpp:18:35: error: invalid use of non-static member function
+     hippocampus_module.spike_train;
+                                   ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+21:56:22 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+./src/main.o: In function `main':
+/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/main.cpp:18: undefined reference to `hippocampus::spike_train()'
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+21:57:32 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+21:57:57 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+22:27:06 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/examples -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+makefile:45: recipe for target 'neural_engine' failed
+22:29:41 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+makefile:45: recipe for target 'neural_engine' failed
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+22:30:19 **** Clean-only build of configuration Debug for project neural_engine ****
+make clean 
+rm -rf  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o  ./src/hippocampus.d ./src/main.d ./src/motor_control.d ./src/vision.d  neural_engine
+ 
+22:30:24 **** Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+makefile:45: recipe for target 'neural_engine' failed
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+22:30:52 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+22:58:14 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+../src/hippocampus.cpp:5:17: error: ‘matplotlibcpp’ is not a namespace-name
+ namespace plt = matplotlibcpp;
+                 ^
+../src/hippocampus.cpp:5:30: error: expected namespace-name before ‘;’ token
+ namespace plt = matplotlibcpp;
+                              ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+22:58:39 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+22:59:11 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+23:12:33 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Terminated
+Command canceled
+23:33:23 **** Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib-cpp-master/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+23:46:46 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/blank_extra2 -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:1:0:
+../src/hippocampus.h:8:27: fatal error: matplotlibcpp.h: No such file or directory
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+23:49:16 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib_header -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib_header -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib_header -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/matplotlib_header -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/General/maze_runner/matplotlib_header/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+makefile:45: recipe for target 'neural_engine' failed
+00:00:57 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/blank_extra2 -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/blank_extra2 -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/blank_extra2 -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/CompNeuro/Software/General/maze_runner/blank_extra2 -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:815: first defined here
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'neural_engine' failed
+make: *** [neural_engine] Error 1
+00:27:07 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/main.cpp:8:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/motor_control.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/motor_control.d" -MT"src/motor_control.o" -o "src/motor_control.o" "../src/motor_control.cpp"
+Finished building: ../src/motor_control.cpp
+ 
+Building file: ../src/vision.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/vision.d" -MT"src/vision.o" -o "src/vision.o" "../src/vision.cpp"
+../src/vision.cpp: In member function ‘cv::Mat vision::compare_gabor_filter(cv::Mat, cv::Mat, int, int, int, int)’:
+../src/vision.cpp:105:9: warning: unused variable ‘max_brightness’ [-Wunused-variable]
+  double max_brightness = 255;
+         ^
+../src/vision.cpp:107:9: warning: unused variable ‘similarity_matches’ [-Wunused-variable]
+  double similarity_matches[(int) total_rotations];// = new double[total_rotations];
+         ^
+Finished building: ../src/vision.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:27:55 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:2:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:28:31 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/hippocampus.cpp:1:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/hippocampus.h:8:0,
+                 from ../src/main.cpp:7:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+./src/main.o: In function `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1064: multiple definition of `matplotlibcpp::backend(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:179: first defined here
+./src/main.o: In function `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1067: multiple definition of `matplotlibcpp::annotate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:184: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1092: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:807: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1097: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:811: first defined here
+./src/main.o: In function `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1100: multiple definition of `matplotlibcpp::plot(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:815: first defined here
+makefile:45: recipe for target 'neural_engine' failed
+./src/main.o: In function `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/math/tools/detail/rational_horner3_17.hpp:1101: multiple definition of `matplotlibcpp::named_plot(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+./src/hippocampus.o:/CompNeuro/Software/MazeRunner/neural_engine/neural_engine/Debug/../src/matplotlibcpp.h:819: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [neural_engine] Error 1
+00:28:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:2:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:29:26 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:2:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/hippocampus.cpp: In member function ‘void hippocampus::spike_train()’:
+../src/hippocampus.cpp:71:2: error: ‘plt’ has not been declared
+  plt::plot(x1);
+  ^
+../src/hippocampus.cpp:72:2: error: ‘plt’ has not been declared
+  plt::show();
+  ^
+src/subdir.mk:27: recipe for target 'src/hippocampus.o' failed
+make: *** [src/hippocampus.o] Error 1
+00:29:42 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/hippocampus.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/hippocampus.d" -MT"src/hippocampus.o" -o "src/hippocampus.o" "../src/hippocampus.cpp"
+In file included from ../src/hippocampus.cpp:2:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/hippocampus.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+00:29:59 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.

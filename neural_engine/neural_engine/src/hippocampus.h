@@ -5,6 +5,7 @@
 #include <boost/array.hpp>
 
 #include <boost/numeric/odeint.hpp>
+//#include "matplotlibcpp.h"
 
 using namespace std;
 using namespace boost::numeric::odeint;
@@ -13,7 +14,7 @@ class hippocampus
 {
 public:
 	typedef boost::array<double, 3> state_type;
-	runge_kutta4< state_type > rk;
+
 
 	struct grid_cells {
 		double V;
@@ -29,6 +30,7 @@ public:
     void time_step();
     void rhs();
     void write_cout();
+    void spike_train();
 
 };
 
