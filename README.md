@@ -36,6 +36,15 @@ Dependencies needed for compiling: Boost, Odeint, OpenCV, Matplotlibcpp. Also pl
 
 \[2\] Sheynikhovich D, Chavarriaga R, Strösslin T, Arleo A, Gerstner W. Is there a geometric module for spatial orientation? Insights from a rodent navigation model. Psychol Rev. 2009;116(3):540-66.
 
-![Image link to maze entrance][maze_enter]
+Video Samples:
 
-[maze_enter]: http://i.imgur.com/qPpUyNv.jpg "Maze Entrance"
+<center>
+<a href="https://gfycat.com/ThornyAcceptableIndianglassfish" target="_blank"><img src="http://i.imgur.com/nultxhH.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://gfycat.com/SnarlingIllinformedGibbon" target="_blank"><img src="http://i.imgur.com/ssjSamF.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://gfycat.com/InfantileVapidIvorygull" target="_blank"><img src="http://i.imgur.com/uNXdr0H.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://gfycat.com/ComplicatedAppropriateIrishdraughthorse" target="_blank"><img src="http://i.imgur.com/nJyybdQ.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+</center>
+
+Gabor Filtering:
+
+<a href="http://i.imgur.com/qPpUyNv.jpg" target="_blank"><img src="http://i.imgur.com/qPpUyNv.jpg" alt="gabor normal" width="360" height="240" border="10"></a><a href="http://i.imgur.com/bizKrcK.jpg" target="_blank"><img src="http://i.imgur.com/bizKrcK.jpg" alt="gabor filtered" width="360" height="240" border="10"></a>
