@@ -43,8 +43,8 @@ Video Samples:
 <a href="https://gfycat.com/SnarlingIllinformedGibbon" target="_blank"><img src="http://i.imgur.com/ssjSamF.png" alt="gameplay video image" width="360" height="240" border="10"></a>
 <a href="https://gfycat.com/InfantileVapidIvorygull" target="_blank"><img src="http://i.imgur.com/uNXdr0H.png" alt="gameplay video image" width="360" height="240" border="10"></a>
 <a href="https://gfycat.com/ComplicatedAppropriateIrishdraughthorse" target="_blank"><img src="http://i.imgur.com/nJyybdQ.png" alt="gameplay video image" width="360" height="240" border="10"></a>
-</center>
 
 Gabor Filtering:
 
 <a href="http://i.imgur.com/qPpUyNv.jpg" target="_blank"><img src="http://i.imgur.com/qPpUyNv.jpg" alt="gabor normal" width="360" height="240" border="10"></a><a href="http://i.imgur.com/bizKrcK.jpg" target="_blank"><img src="http://i.imgur.com/bizKrcK.jpg" alt="gabor filtered" width="360" height="240" border="10"></a>
+</center>
