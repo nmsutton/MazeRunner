@@ -15,7 +15,7 @@ Currently included:
 
 ## Neural Computation
 
-Grid and place cells, and oscillatory rhythms will be modeled. Initially the work will be from oscillatory interference formulas by Dr. Neil Burgess \[1\]. Alternatively spatial memory formulas from Dr. Michael Hasselmo may be used instead, that effort is being looked into \[2\]. Similar methods to those of an existing Sheynikhovich, et al., 3d maze simulation will be included \[3\]. Recreation of observed mouse neural activity can be used in the maze tasks and theories of neural mechanisms can be explored. Eventual work can include addressing open questions existing in the current state of spatial memory models.
+Grid and place cells, and oscillatory rhythms will be modeled. Initially the work will be from oscillatory interference formulas by Dr. Neil Burgess \[1\]. Integrating spatial memory formulas from Dr. Michael Hasselmo is also a goal \[2\]. Similar methods to those of an existing Sheynikhovich, et al., 3d maze simulation will be included \[3\]. Recreation of observed mouse neural activity will be used in the maze tasks as a ground truth for training and testing models. A source of in vivo recorded activity will be the open access data from Dr. Gyorgy Buzsáki's lab that was obtained in spatial memory task experiments \[4\]. Theories of neural mechanisms can be explored through modifying neural properties. Eventual work can include addressing open questions existing in the current state of spatial memory models.
 
 Presently functional:
 * Saved images from the maze are processed by a Gabor filter using OpenCV. That will be visual stimulus input into neural networks of spatial memory cells to learn the maze.
@@ -38,7 +38,9 @@ Dependencies needed for compiling: Boost, Odeint, OpenCV, Matplotlibcpp. Also pl
 
 \[2\] Hasselmo ME. A model of episodic memory: mental time travel along encoded trajectories using grid cells. Neurobiol Learn Mem. 2009;92(4):559-73.
 
-\[2\] Sheynikhovich D, Chavarriaga R, Strösslin T, Arleo A, Gerstner W. Is there a geometric module for spatial orientation? Insights from a rodent navigation model. Psychol Rev. 2009;116(3):540-66.
+\[3\] Sheynikhovich D, Chavarriaga R, Strösslin T, Arleo A, Gerstner W. Is there a geometric module for spatial orientation? Insights from a rodent navigation model. Psychol Rev. 2009;116(3):540-66.
+
+\[4\] Diba K, Buzsáki G. Hippocampal network dynamics constrain the time lag between pyramidal cells across modified environments. J Neurosci. 2008;28(50):13448-56. Open Access Data: [hc-3 at crcns.org](http://crcns.org/data-sets/hc/hc-3)
 
 Video Samples:
 
