@@ -15,7 +15,7 @@ Currently included:
 
 ## Neural Computation
 
-Grid and place cells, and oscillatory rhythms will be modeled. That area of modeling is an evolving area of science. Based on my latest readings I plan to include continuous attractor network (CAN) models and ramping membrane potential dynamics \[1\]\[2\]. For example, potentially work based off models of Si, et al. \[3\] A known issue with CAN models are the often lack of inclusion of mechanisms for phase procession relative to theta rhythms. A possible method to address that is to have a hybrid model with oscillatory interference \[4\]\[5\]. Oscillatory interference has had some challenges given to it by studies on bats mice, and others; using it or a different approach will need to be evaluated \[6\]\[7\]. The simulation can potentially include multiple models and compare and contrast them. It is a work in progress to determine which of the latest models will be initially included.
+Grid and place cells, and oscillatory rhythms will be modeled. That area of modeling is an evolving area of science. Based on my latest readings I plan to include continuous attractor network (CAN) models and ramping membrane potential dynamics \[1\]\[2\]. For example, potentially work based off models of Si, et al. \[3\] A known issue with CAN models are the often lack of inclusion of mechanisms for phase procession relative to theta rhythms. A possible method to address that is to have a hybrid model with oscillatory interference \[4\]\[5\]. Oscillatory interference has had some challenges presented to it by studies on bats, mice, and others; using it or a different approach will need to be evaluated \[6\]\[7\]. The simulation can potentially include multiple models and compare and contrast them. It is a work in progress to determine which of the latest models will be initially included.
 
 Similar methods to those of an existing Sheynikhovich, et al., 3d maze simulation will be included \[8\]. Recreation of observed mouse neural activity will be used in the maze tasks as a ground truth for training and testing models. A source of in vivo recorded activity will be the open access data from Dr. Gyorgy Buzsáki's lab that was obtained in spatial memory task experiments \[9\]. Another source of data can be from the Kavli Institute of Systems Neuroscience \[10\]. Theories of neural mechanisms can be explored through modifying neural properties. Eventual work can include addressing open questions existing in the current state of spatial memory models.
 
@@ -34,8 +34,7 @@ Import the 3d maze folder into UE4 and it will compile the project for you.
 The project is in C++ and created with Eclipse C++ edition. Import it with that IDE or one of your choice.
 Dependencies needed for compiling: Boost, Odeint, OpenCV, Matplotlibcpp. Also plplot and python2.7 but those are planning to be removed.
 
-
-Video Samples:
+## Video Samples:
 
 <center>
 <a href="https://gfycat.com/ThornyAcceptableIndianglassfish" target="_blank"><img src="http://i.imgur.com/nultxhH.png" alt="gameplay video image" width="360" height="240" border="10"></a>
@@ -69,3 +68,5 @@ Gabor Filtering:
 \[9\] Diba K, Buzsáki G. Hippocampal network dynamics constrain the time lag between pyramidal cells across modified environments. J Neurosci. 2008;28(50):13448-56. Open Access Data: [hc-3 at crcns.org](http://crcns.org/data-sets/hc/hc-3)
 
 \[10\] Hafting T, Fyhn M, Bonnevie T, Moser MB, Moser EI. Hippocampus-independent phase precession in entorhinal grid cells. Nature. 2008;453(7199):1248-52. Open Access Data: [data at ntnu.edu](ntnu.edu/kavli/research/grid-cell-data)
+
+
