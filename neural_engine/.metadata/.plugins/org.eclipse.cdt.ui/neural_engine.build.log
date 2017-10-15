@@ -1,4 +1,4 @@
-11:30:18 **** Incremental Build of configuration Debug for project neural_engine ****
+14:47:14 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/hippocampus.cpp
 Invoking: GCC C++ Compiler
@@ -10,10 +10,10 @@ In file included from ../src/hippocampus.cpp:2:0:
                                                                    ^
 ../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
 ../src/hippocampus.cpp: In static member function ‘static void hippocampus::sys(const state_type&, hippocampus::state_type&, double)’:
-../src/hippocampus.cpp:45:9: warning: unused variable ‘W’ [-Wunused-variable]
+../src/hippocampus.cpp:43:9: warning: unused variable ‘W’ [-Wunused-variable]
   double W = 10.0;
          ^
-../src/hippocampus.cpp:46:9: warning: unused variable ‘Z’ [-Wunused-variable]
+../src/hippocampus.cpp:44:9: warning: unused variable ‘Z’ [-Wunused-variable]
   double Z = 0.02;
          ^
 Finished building: ../src/hippocampus.cpp
@@ -24,5 +24,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o .
 Finished building target: neural_engine
  
 
-11:30:24 Build Finished (took 6s.290ms)
+14:47:20 Build Finished (took 6s.358ms)
 

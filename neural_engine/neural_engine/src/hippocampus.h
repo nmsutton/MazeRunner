@@ -24,6 +24,8 @@ public:
 	};
 	int GRID_POPULATION_NUMBER = 6;
 	int GRID_POPULATION_SIZE = 25;
+	grid_cells** new_pop;
+	grid_cells*** grid_cell_populations = new grid_cells**[GRID_POPULATION_SIZE];
 	//int active_grid_cell[2] = {{0,0}};
 
     hippocampus();

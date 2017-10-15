@@ -185,4 +185,15 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 	return gabor_match;
 }
 
+std::vector<double> moves_detected()
+{
+	double move_forward_linear = .1;
+	int total_moves = 15;
+	std::vector<double> detected_moves;
+	for (int i = 0; i < total_moves; i++) {
+		detected_moves.push_back(move_forward_linear);
+	}
+	return detected_moves;
+}
+
 

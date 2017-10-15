@@ -11,10 +11,10 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-	/*
+
     vision vision_module;
-    vision_module.stream_input();
-    */
+    //vision_module.stream_input();
+
     
 
     hippocampus hippocampus_module;

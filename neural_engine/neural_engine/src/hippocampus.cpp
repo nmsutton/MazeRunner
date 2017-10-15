@@ -8,8 +8,6 @@ namespace plt = matplotlibcpp;
 
 hippocampus::hippocampus()
 {
-	grid_cells** new_pop;
-	grid_cells*** grid_cell_populations = new grid_cells**[GRID_POPULATION_SIZE];
 	for (int i = 0; i < GRID_POPULATION_NUMBER; i++) {
 		new_pop = create_grid_population();
 		grid_cell_populations[i] = new_pop;
@@ -108,7 +106,8 @@ void hippocampus::spike_train() {
 	*/
 
 	runge_kutta_dopri5< double > rk2;
-    double x = 0.0;
+    double * x;
+    x = &grid_cell_populations[0][0]->V;//0.0;
     //hippocampus::state_type x = { 0.0 , 1.0 , 1.0 };//{ 10.0 , 1.0 , 1.0 };
 
     //integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
@@ -119,12 +118,13 @@ void hippocampus::spike_train() {
 	//integrate_const( rk2 , rhs , x , 1.0 , 10.0 , 0.1, write_cout );
 	for (int i = 0; i < time_span; i++) {
 		t += dt;
-		x_data.push_back(x);
-		x = refractory(x, refrac_threshold);
+		x_data.push_back(*x);
+		*x = refractory(*x, refrac_threshold);
+		//if (grid_cell_populations[0][0]->V >= refrac_threshold) {grid_cell_populations[0][0]->V = 0;}
 		//x_data.push_back(x[0]);
 		//y_data.push_back(0);
 		//integrate_const( rk2 , rhs , x , t , (t+dt) , dt);
-		integrate_const( rk2 , sys2 , x , t , (t+dt) , dt);
+		integrate_const( rk2 , sys2 , *x , t , (t+dt) , dt);
 	}
 
 	//std::vector<double> x1 = {{1, 2, 3, 4}};
