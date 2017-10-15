@@ -6,6 +6,8 @@
 
 #include <boost/numeric/odeint.hpp>
 //#include "matplotlibcpp.h"
+#include <vector>
+#include <cmath>
 
 using namespace std;
 using namespace boost::numeric::odeint;
@@ -27,11 +29,21 @@ public:
     hippocampus();
     ~hippocampus();
     hippocampus::grid_cells** create_grid_population();
-    void time_step();
-    void rhs();
+    typedef runge_kutta_dopri5< double > stepper_type;
+	runge_kutta4< hippocampus::state_type > rk;
+    void time_step(int i, runge_kutta4< hippocampus::state_type > rk, hippocampus::state_type x, double t, double dt);
+    //void rhs();
+    static void rhs( const double x , double &dxdt , const double t );
+    //static void sys( const hippocampus::state_type &x , hippocampus::state_type &dxdt , const double t );
+    static void sys( const hippocampus::state_type &x , hippocampus::state_type &dxdt , const double t );
+    static void sys2( const double x , double &dxdt , const double t );
     void write_cout();
     void spike_train();
 
+	int time_span = 200;
+	/*double x_data[200];
+	double y_data[200];*/
+	std::vector<double> x_data, y_data;
 };
 
 #endif // HIPPOCAMPUS_H
