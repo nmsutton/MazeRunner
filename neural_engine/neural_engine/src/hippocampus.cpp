@@ -86,6 +86,12 @@ void hippocampus::time_step(int i, runge_kutta4< hippocampus::state_type > rk, h
 	//integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
 }
 
+double hippocampus::refractory(double x, double refrac_threshold)
+{
+	if (x >= refrac_threshold) {x = 0;}
+	return x;
+}
+
 void hippocampus::spike_train() {
 	/*
 	runge_kutta_dopri5< double > rk2;
@@ -108,12 +114,13 @@ void hippocampus::spike_train() {
     //integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
 	double t = 0.0;
 	const double dt = 0.0025;//0.1;//0.0025;
-	int time_span = 200;
+	int time_span = 2000;
 
 	//integrate_const( rk2 , rhs , x , 1.0 , 10.0 , 0.1, write_cout );
 	for (int i = 0; i < time_span; i++) {
 		t += dt;
 		x_data.push_back(x);
+		x = refractory(x, refrac_threshold);
 		//x_data.push_back(x[0]);
 		//y_data.push_back(0);
 		//integrate_const( rk2 , rhs , x , t , (t+dt) , dt);

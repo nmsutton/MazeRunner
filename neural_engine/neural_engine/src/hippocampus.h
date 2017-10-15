@@ -32,17 +32,15 @@ public:
     typedef runge_kutta_dopri5< double > stepper_type;
 	runge_kutta4< hippocampus::state_type > rk;
     void time_step(int i, runge_kutta4< hippocampus::state_type > rk, hippocampus::state_type x, double t, double dt);
-    //void rhs();
     static void rhs( const double x , double &dxdt , const double t );
-    //static void sys( const hippocampus::state_type &x , hippocampus::state_type &dxdt , const double t );
     static void sys( const hippocampus::state_type &x , hippocampus::state_type &dxdt , const double t );
     static void sys2( const double x , double &dxdt , const double t );
     void write_cout();
     void spike_train();
+    double refractory(double x, double refrac_threshold);
 
 	int time_span = 200;
-	/*double x_data[200];
-	double y_data[200];*/
+	double refrac_threshold = 9.9;
 	std::vector<double> x_data, y_data;
 };
 

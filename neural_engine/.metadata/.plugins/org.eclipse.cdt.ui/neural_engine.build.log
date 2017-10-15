@@ -1,4 +1,4 @@
-00:46:29 **** Incremental Build of configuration Debug for project neural_engine ****
+11:30:18 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/hippocampus.cpp
 Invoking: GCC C++ Compiler
@@ -24,5 +24,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o .
 Finished building target: neural_engine
  
 
-00:46:35 Build Finished (took 5s.244ms)
+11:30:24 Build Finished (took 6s.290ms)
 
