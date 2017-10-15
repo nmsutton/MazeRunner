@@ -90,7 +90,7 @@ double hippocampus::refractory(double x, double refrac_threshold)
 	return x;
 }
 
-void hippocampus::spike_train() {
+void hippocampus::spike_train(double V) {
 	/*
 	runge_kutta_dopri5< double > rk2;
 	hippocampus::state_type x = { 0.0 , 1.0 , 1.0 };//{ 10.0 , 1.0 , 1.0 };
@@ -107,7 +107,7 @@ void hippocampus::spike_train() {
 
 	runge_kutta_dopri5< double > rk2;
     double * x;
-    x = &grid_cell_populations[0][0]->V;//0.0;
+    x = &V;//&grid_cell_populations[0][0]->V;//0.0;
     //hippocampus::state_type x = { 0.0 , 1.0 , 1.0 };//{ 10.0 , 1.0 , 1.0 };
 
     //integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
@@ -134,4 +134,10 @@ void hippocampus::spike_train() {
 	plt::show();
 
 
+}
+
+void hippocampus::process_activity()
+{
+    double V = grid_cell_populations[0][0]->V;
+    spike_train(V);
 }

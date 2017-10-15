@@ -38,8 +38,9 @@ public:
     static void sys( const hippocampus::state_type &x , hippocampus::state_type &dxdt , const double t );
     static void sys2( const double x , double &dxdt , const double t );
     void write_cout();
-    void spike_train();
+    void spike_train(double V);
     double refractory(double x, double refrac_threshold);
+    void process_activity();
 
 	int time_span = 200;
 	double refrac_threshold = 9.9;

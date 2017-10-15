@@ -18,9 +18,7 @@ int main(int argc, char **argv)
     
 
     hippocampus hippocampus_module;
-    //hippocampus_module.spike_train();
-    hippocampus_module.spike_train();
-
+    hippocampus_module.process_activity();
 
 	/*
 	test test_module;

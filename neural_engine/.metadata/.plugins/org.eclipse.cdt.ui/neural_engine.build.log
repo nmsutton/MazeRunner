@@ -1,4 +1,4 @@
-14:47:14 **** Incremental Build of configuration Debug for project neural_engine ****
+15:00:48 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/hippocampus.cpp
 Invoking: GCC C++ Compiler
@@ -18,11 +18,16 @@ In file included from ../src/hippocampus.cpp:2:0:
          ^
 Finished building: ../src/hippocampus.cpp
  
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
 Building target: neural_engine
 Invoking: GCC C++ Linker
-g++ -L/usr/include/opencv -o "neural_engine"  ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
 
-14:47:20 Build Finished (took 6s.358ms)
+15:00:59 Build Finished (took 11s.121ms)
 
