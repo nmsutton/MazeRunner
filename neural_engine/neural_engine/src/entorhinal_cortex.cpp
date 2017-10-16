@@ -156,32 +156,41 @@ void entorhinal_cortex::time_step()
 
 	double i2, j2;
 	double g_AMPA, g_NMDA, g_GABA_A;
-	double Isyn;
+	double Isyn = 0.0;
 	double E_AMPA = 0.0, E_NMDA = 0.0, E_GABA_A = -75;
-	double Vm;
+	double Vm = 0.0;
 	double Im = 0.0, Iext = 0.0, n = 0.0;
 	double Cm_exc = 211.389, Cm_inh = 227.3;
-	double row_length = floor(sqrt(GRID_POPULATION_SIZE));
-	double col_length;
+	double row_max = floor(sqrt(GRID_POPULATION_SIZE));
+	double col_max = 0.0;
 	double sqrt_cols = floor(sqrt(GRID_POPULATION_SIZE));
+	double row = 0, col = 0;
 
 	if (GRID_POPULATION_SIZE % (int) sqrt_cols > .2)
-	{col_length = sqrt_cols + 1;}
-	else {col_length = sqrt_cols;}
+	{col_max = sqrt_cols + 1;}
+	else {col_max = sqrt_cols;}
+	//cout<< "row_max " << row_max << " col_max " << col_max << "\n";
 
-	for (double i = 0; i < GRID_POPULATION_NUMBER; i++)
+	for (int i = 0; i < GRID_POPULATION_NUMBER; i++)
 	{
-		for (double j = 0; j < GRID_POPULATION_SIZE; j++)
+		for (int j = 0; j < GRID_POPULATION_SIZE; j++)
 		{
-			if (i2 < row_length) {i2 = i + 1;} else {i2 = 0;}
-			if (j2 < col_length) {j2 = j + 1;} else {j2 = 0;}
+			row = floor(j / row_max);
+			col = j - (row*row_max);
+			//if (row < row_max) {i2 = i + 1;} else {i2 = 0;}
+			//if (col < col_max) {j2 = j + 1;} else {j2 = 0;}
+			i2 = i;
+			if (j < (GRID_POPULATION_SIZE-1)) {j2 = j + 1;} else {j2 = 0;}
+			//cout << " i2 " << i2 << " j2 " << j2 << "\n";
 
 			g_AMPA = synapse(grid_cell_populations, i, i2, j, j2, "AMPA");
 			g_NMDA = synapse(grid_cell_populations, i, i2, j, j2, "NMDA");
 			g_GABA_A = synapse(grid_cell_populations, i, i2, j, j2, "GABA");
+
 			Vm = grid_cell_populations[(int) i][(int)j]->V;
 
 			Isyn = g_GABA_A*(E_GABA_A-Vm)+g_AMPA*(E_AMPA-Vm)+g_NMDA*(E_NMDA-Vm);
+
 
 			Vm = (Im + Isyn + Iext + n)/Cm_exc;
 			grid_cell_populations[(int) i][(int) j]->V = Vm;
@@ -196,6 +205,8 @@ double entorhinal_cortex::distance(entorhinal_cortex::grid_cells ***grid_cell_po
 	 * d(i,j,C,e_j_p)
 	 */
 
+	//cout << "calc dist";
+	//double x1 = 1.0, x2 = 1.0, y1 = 1.0, y2 = 1.0, z1 = 1.0, z2 = 1.0;
 	double x1 = grid_cell_populations[i][j]->pos_x;
 	double x2 = grid_cell_populations[i2][j2]->pos_x;
 	double y1 = grid_cell_populations[i][j]->pos_y;
@@ -206,6 +217,7 @@ double entorhinal_cortex::distance(entorhinal_cortex::grid_cells ***grid_cell_po
 	double e_i_p = grid_cell_populations[i][j]->e_i_p;
 	if (syn_type == "ie") {C = 0.0; e_i_p = 0.0;}
 	double euclidean = sqrt(pow((x2-x1),2)+pow((y2-y1),2)+pow((z2-z1),2));
+	//cout << "dist i: " << i << " j: " << j << "n";
 
 	return euclidean - (C * e_i_p);
 }
@@ -224,20 +236,20 @@ double entorhinal_cortex::synapse(entorhinal_cortex::grid_cells ***grid_cell_pop
 	double sig_exc = 1.0, sig_inh = 1.0, sig_ee = 1.0;
 	double ge = 1.0, gi = 1.0;
 	double C_NMDA = 0.02;
-	double weight, ampa;
+	double weight = 0.0, ampa = 1.0;
 
 	if (syn_type == "AMPA") {
 		weight = ge*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ei")-u),2)/(2*pow(sig_exc, 2)));
 	}
 	else if (syn_type == "NMDA") {
-		ampa = ge*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ei")-u),2)/(2*pow(sig_exc, 2)));;
+		//ampa = ge*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ei")-u),2)/(2*pow(sig_exc, 2)));;
 		weight = C_NMDA * ampa;
 	}
 	else if (syn_type == "GABA") {
-		weight = gi*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ie")),2)/(2*pow(sig_inh, 2)));
+		//weight = gi*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ie")),2)/(2*pow(sig_inh, 2)));
 	}
 	else if (syn_type == "EE") {
-		weight = ge*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ee")),2)/(2*pow(sig_ee, 2)));
+		//weight = ge*exp(-pow((distance(grid_cell_populations, i, i2, j,j2,"ee")),2)/(2*pow(sig_ee, 2)));
 	}
 
 	return weight;

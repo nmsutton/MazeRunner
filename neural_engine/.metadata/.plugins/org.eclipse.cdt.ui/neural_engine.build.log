@@ -1,4 +1,4 @@
-16:07:50 **** Incremental Build of configuration Debug for project neural_engine ****
+18:46:22 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/entorhinal_cortex.cpp
 Invoking: GCC C++ Compiler
@@ -20,12 +20,23 @@ In file included from ../src/entorhinal_cortex.cpp:3:0:
 ../src/entorhinal_cortex.cpp:163:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
   double Cm_exc = 211.389, Cm_inh = 227.3;
                            ^
+../src/entorhinal_cortex.cpp:165:9: warning: variable ‘col_max’ set but not used [-Wunused-but-set-variable]
+  double col_max = 0.0;
+         ^
+../src/entorhinal_cortex.cpp:167:18: warning: variable ‘col’ set but not used [-Wunused-but-set-variable]
+  double row = 0, col = 0;
+                  ^
+../src/entorhinal_cortex.cpp: In member function ‘double entorhinal_cortex::synapse(entorhinal_cortex::grid_cells***, int, int, int, int, std::__cxx11::string)’:
+../src/entorhinal_cortex.cpp:236:24: warning: unused variable ‘sig_inh’ [-Wunused-variable]
+  double sig_exc = 1.0, sig_inh = 1.0, sig_ee = 1.0;
+                        ^
+../src/entorhinal_cortex.cpp:236:39: warning: unused variable ‘sig_ee’ [-Wunused-variable]
+  double sig_exc = 1.0, sig_inh = 1.0, sig_ee = 1.0;
+                                       ^
+../src/entorhinal_cortex.cpp:237:19: warning: unused variable ‘gi’ [-Wunused-variable]
+  double ge = 1.0, gi = 1.0;
+                   ^
 Finished building: ../src/entorhinal_cortex.cpp
- 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
  
 Building target: neural_engine
 Invoking: GCC C++ Linker
@@ -33,5 +44,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hi
 Finished building target: neural_engine
  
 
-16:08:05 Build Finished (took 15s.104ms)
+18:46:28 Build Finished (took 5s.679ms)
 

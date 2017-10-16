@@ -20,7 +20,7 @@ using namespace boost::numeric::odeint;
 
 		struct grid_cells {
 			double V;
-			double pos_x, pos_y, pos_z;
+			double pos_x = 0.0, pos_y = 0.0, pos_z = 0.0;
 			double C = 0.03;
 			double e_i_p = 1.0;
 			//runge_kutta4< boost::array<double, 3> > rk;
