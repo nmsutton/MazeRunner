@@ -21,6 +21,8 @@ using namespace boost::numeric::odeint;
 		struct grid_cells {
 			double V;
 			double pos_x, pos_y, pos_z;
+			double C = 0.03;
+			double e_i_p = 1.0;
 			//runge_kutta4< boost::array<double, 3> > rk;
 		};
 		int GRID_POPULATION_NUMBER = 6;
@@ -46,6 +48,9 @@ using namespace boost::numeric::odeint;
 		void process_activity(std::vector<double> detected_moves);
 		void compute_cell_locations(entorhinal_cortex::grid_cells ***grid_cell_populations, int GRID_POPULATION_NUMBER, int GRID_POPULATION_SIZE,
 				double row_spacing, double col_spacing);
+		double distance(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int i2, int j, int j2, string syn_type)
+		double synapse(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int i2, int j, int j2, string syn_type)
+		void time_step();
 
 		int time_span = 200;
 		double refrac_threshold = 9.9;
