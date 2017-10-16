@@ -185,8 +185,11 @@ Mat vision::compare_gabor_filter(Mat image, Mat image_result, int region_x, int 
 	return gabor_match;
 }
 
-std::vector<double> moves_detected()
+std::vector<double> vision::moves_detected()
 {
+	/*
+	 * Generating a highly simplified velocity modulated current (I vel ) for testing
+	 */
 	double move_forward_linear = .1;
 	int total_moves = 15;
 	std::vector<double> detected_moves;
