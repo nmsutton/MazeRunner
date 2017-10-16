@@ -164,12 +164,12 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 		{
 			row = floor(j / row_length);//floor(((i * GRID_POPULATION_NUMBER) + j) / row_length);
 			col = j - (row*row_length);//((i * GRID_POPULATION_NUMBER) + j) - (row * GRID_POPULATION_SIZE);
-			if (((int) row % 2) > 0.2) {stagger = .5 * row_spacing;}
+			if (((int) row % 2) > 0.2) {stagger = .5 * row_spacing;} else {stagger = 0;}
 			//double V = grid_cell_populations[0][0]->V;
 			grid_cell_populations[(int) i][(int) j]->pos_x = (col * row_spacing) + stagger;
 			grid_cell_populations[(int) i][(int) j]->pos_y = row * col_spacing;
 			grid_cell_populations[(int) i][(int) j]->pos_z = 0.0;
-			cout << "i: " << i << " j: " << j << " x: " << grid_cell_populations[(int) i][(int) j]->pos_x << " y: " << grid_cell_populations[(int) i][(int) j]->pos_y << "\r\n";
+			cout << " i: " << i << " j: " << j << " x: " << grid_cell_populations[(int) i][(int) j]->pos_x << " y: " << grid_cell_populations[(int) i][(int) j]->pos_y << "\n";
 		}
 	}
 }
