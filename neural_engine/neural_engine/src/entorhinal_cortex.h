@@ -23,6 +23,7 @@ using namespace boost::numeric::odeint;
 			double pos_x = 0.0, pos_y = 0.0, pos_z = 0.0;
 			double C = 0.03;
 			double e_i_p = 1.0;
+			double g_AMPA = 1.0, g_NMDA = 1.0, g_GABA_A = 1.0, g_EE = 1.0;
 			//runge_kutta4< boost::array<double, 3> > rk;
 		};
 		int GRID_POPULATION_NUMBER = 6;
@@ -47,11 +48,12 @@ using namespace boost::numeric::odeint;
 		void process_activity(std::vector<double> detected_moves);
 		void compute_cell_locations(entorhinal_cortex::grid_cells ***grid_cell_populations, int GRID_POPULATION_NUMBER, int GRID_POPULATION_SIZE,
 				double row_spacing, double col_spacing);
-		double distance(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int i2, int j, int j2, string syn_type);
-		double synapse(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int i2, int j, int j2, string syn_type);
+		double distance(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int j, int j2, string syn_type);
+		void synapse(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int j, string syn_type);
 		void time_step();
+		double dirac(double t1, double t2);
 
-		int time_span = 200;
+		int time_span = 20;//200;
 		double refrac_threshold = 9.9;
 		std::vector<double> x_data, y_data;
 	};
