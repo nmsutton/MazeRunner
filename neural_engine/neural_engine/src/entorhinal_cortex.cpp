@@ -47,52 +47,32 @@ void entorhinal_cortex::time_step()
 	 */
 
 	double i2, j2;
-	//double g_AMPA, g_NMDA, g_GABA_A;
 	double Isyn = 0.0;
 	double E_AMPA = 0.0, E_NMDA = 0.0, E_GABA_A = -75.0;
 	double Vm = 0.0;
 	double Im = 0.0, Iext = 1.1, n = 0.0;
 	double Cm_exc = 211.389, Cm_inh = 227.3;
 	double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
-	/*double row_max = floor(sqrt(GRID_POPULATION_SIZE));
-	double col_max = 0.0;
-	double sqrt_cols = floor(sqrt(GRID_POPULATION_SIZE));
-	double row = 0, col = 0;
-
-	if (GRID_POPULATION_SIZE % (int) sqrt_cols > .2)
-	{col_max = sqrt_cols + 1;}
-	else {col_max = sqrt_cols;}*/
-	//cout<< "row_max " << row_max << " col_max " << col_max << "\n";
 
 	for (int i = 0; i < GRID_POPULATION_NUMBER; i++)
 	{
 		for (int j = 0; j < GRID_POPULATION_SIZE; j++)
 		{
-			/*row = floor(j / row_max);
-			col = j - (row*row_max);
-			//if (row < row_max) {i2 = i + 1;} else {i2 = 0;}
-			//if (col < col_max) {j2 = j + 1;} else {j2 = 0;}
-			i2 = i;
-			if (j < (GRID_POPULATION_SIZE-1)) {j2 = j + 1;} else {j2 = 0;}*/
-			//cout << " i2 " << i2 << " j2 " << j2 << "\n";
-
 			synapse(grid_cell_populations, i, j, "AMPA_NMDA");
 			synapse(grid_cell_populations, i, j, "GABA");
 			g_AMPA = &grid_cell_populations[i][j]->g_AMPA;
 			g_NMDA = &grid_cell_populations[i][j]->g_NMDA;
 			g_GABA_A = &grid_cell_populations[i][j]->g_GABA_A;
 
-			Vm = grid_cell_populations[(int) i][(int)j]->V;
+			Vm = grid_cell_populations[i][j]->V;
 
 			Isyn = *g_GABA_A*(E_GABA_A-Vm)+*g_AMPA*(E_AMPA-Vm)+*g_NMDA*(E_NMDA-Vm);
 
 
 			Vm = (Im + Isyn + Iext + n)/Cm_exc;
-			//grid_cell_populations[(int) i][(int) j]->V = Vm;
-			grid_cell_populations[(int) i][(int) j]->V += Vm; // using += for testing
+			grid_cell_populations[i][j]->V += Vm; // using += for testing
 		}
 	}
-	//grid_cell_populations[0][0]->V = 22;
 }
 
 double entorhinal_cortex::distance(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int j, int j2, string syn_type)
@@ -102,8 +82,6 @@ double entorhinal_cortex::distance(entorhinal_cortex::grid_cells ***grid_cell_po
 	 * d(i,j,C,e_j_p)
 	 */
 
-	//cout << "calc dist";
-	//double x1 = 1.0, x2 = 1.0, y1 = 1.0, y2 = 1.0, z1 = 1.0, z2 = 1.0;
 	double x1 = grid_cell_populations[i][j]->pos_x;
 	double x2 = grid_cell_populations[i][j2]->pos_x;
 	double y1 = grid_cell_populations[i][j]->pos_y;
@@ -178,7 +156,6 @@ void entorhinal_cortex::synapse(entorhinal_cortex::grid_cells ***grid_cell_popul
 			weight += C_NMDA * (*g_AMPA);
 		}
 		*g_NMDA = -(*g_NMDA/t_NMDA)+weight;
-		//ampa = ge*exp(-pow((distance(grid_cell_populations, i, j,j2,"ei")-u),2)/(2*pow(sig_exc, 2)));
 	}
 	else if (syn_type == "GABA") {
 		g_GABA_A = &grid_cell_populations[i][j]->g_GABA_A;
@@ -217,10 +194,9 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 		stagger = 0;
 		for (double j = 0; j < GRID_POPULATION_SIZE; j++)
 		{
-			row = floor(j / row_length);//floor(((i * GRID_POPULATION_NUMBER) + j) / row_length);
-			col = j - (row*row_length);//((i * GRID_POPULATION_NUMBER) + j) - (row * GRID_POPULATION_SIZE);
+			row = floor(j / row_length);
+			col = j - (row*row_length);
 			if (((int) row % 2) > 0.2) {stagger = .5 * row_spacing;} else {stagger = 0;}
-			//double V = grid_cell_populations[0][0]->V;
 			grid_cell_populations[(int) i][(int) j]->pos_x = (col * row_spacing) + stagger;
 			grid_cell_populations[(int) i][(int) j]->pos_y = row * col_spacing;
 			grid_cell_populations[(int) i][(int) j]->pos_z = 0.0;
@@ -231,17 +207,13 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 	}
 }
 
-void entorhinal_cortex::rhs( const double x , double &dxdt , const double t )
-{
-    dxdt = 3.0/(2.0*t*t) + x/(2.0*t);
-}
-
 void entorhinal_cortex::sys( const entorhinal_cortex::state_type &x , entorhinal_cortex::state_type &dxdt , const double t )
 {
 	/*
 	 * https://math.stackexchange.com/questions/1009989/how-to-take-the-integral-of-a-derivative-to-obtain-desired-result
 	 * d(V)/d(t) = (-V(t) + W)/Z
 	 */
+
 	dxdt[0] = 3.0 / (2.0*t*t) + x[0] / (2.0*t);
 	double W = 10.0;
 	double Z = 0.02;
@@ -256,6 +228,7 @@ void entorhinal_cortex::sys2( const double x , double &dxdt , const double t )
 	 * https://math.stackexchange.com/questions/1009989/how-to-take-the-integral-of-a-derivative-to-obtain-desired-result
 	 * d(V)/d(t) = (-V(t) + W)/Z
 	 */
+
 	//dxdt = 3.0 / (2.0*t*t) + x / (2.0*t);
 	double W = 10.0;
 	double Z = 0.02;
@@ -276,29 +249,12 @@ double entorhinal_cortex::refractory(double x, double refrac_threshold)
 }
 
 void entorhinal_cortex::spike_train() {
-	/*
-	runge_kutta_dopri5< double > rk2;
-	entorhinal_cortex::state_type x = { 0.0 , 1.0 , 1.0 };//{ 10.0 , 1.0 , 1.0 };
-	double t = 0;
-	const double dt = 0.1;//0.0025;
-
-	for (int i = 0; i < time_span; i++) {
-		t += dt;
-		x_data.push_back(0);
-		y_data.push_back(0);
-		entorhinal_cortex::time_step(i, rk, x, t, dt);
-	}
-	*/
 
 	runge_kutta_dopri5< double > rk2;
     double * x;
     x = &grid_cell_populations[0][0]->V;
-    //entorhinal_cortex::state_type x = { 0.0 , 1.0 , 1.0 };//{ 10.0 , 1.0 , 1.0 };
-
-    //integrate_adaptive( make_controlled( 1E-12 , 1E-12 , stepper_type() ) , rhs , x , 1.0 , 10.0 , 0.1 , write_cout );
-	double t = 0.0;
+    double t = 0.0;
 	const double dt = 0.0025;//0.1;//0.0025;
-	//int time_span = 2000;
 
 	//integrate_const( rk2 , rhs , x , 1.0 , 10.0 , 0.1, write_cout );
 	for (int i = 0; i < time_span; i++) {
@@ -306,19 +262,12 @@ void entorhinal_cortex::spike_train() {
 		*x = refractory(*x, refrac_threshold);
 
 		time_step();
-		//*x = 15.0;
-		//grid_cell_populations[0][0]->V = 22;
 		integrate_const( rk2 , sys2 , *x , t , (t+dt) , dt);
 		x_data.push_back(*x);
 	}
 
-	//std::vector<double> x1 = {{1, 2, 3, 4}};
-	//plt::plot(x1);
-
 	plt::plot(x_data);//, y_data);
 	plt::show();
-
-
 }
 
 void entorhinal_cortex::process_activity(std::vector<double> detected_moves)
@@ -327,6 +276,5 @@ void entorhinal_cortex::process_activity(std::vector<double> detected_moves)
 	 * Create spike train
 	 */
 
-    //double V = grid_cell_populations[0][0]->V;
     spike_train();
 }
