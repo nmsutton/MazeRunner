@@ -23,7 +23,8 @@ Presently functional:
 * Saved images from the maze are processed by a Gabor filter using OpenCV. That will be visual stimulus input into neural networks of spatial memory cells to learn the maze.
 * Differential equations solver is working with odeint, that can generate synapse signalling differential equations if needed. Plotting is operational with matplotlibcpp.
 * Grid cell populations are generated as multidimentional struct arrays which contain pertinant variables (i.e., membrane voltage and neuron location).
-* Synaptic current for each neuron has been implemented through corresponding formulas. All-to-all within a grid cell population connections have been tested over several time 
+Presently 6 populations of 5x5 neuron grid formations are included.
+* Synaptic current for each neuron has been implemented through corresponding formulas. All-to-all connections within grid cell populations have been tested over several time 
 steps and found to be computing successfully. Some simplifications were made (i.e., refractory period and dirac delta) but more complex methods can be
 included in the implementation in the future.
 * Efficient memory management is included through pointers avoiding hard copying values. E.g., voltages and synaptic currents.
