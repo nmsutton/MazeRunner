@@ -38,12 +38,11 @@ using namespace boost::numeric::odeint;
 		entorhinal_cortex::grid_cells** create_grid_population();
 		typedef runge_kutta_dopri5< double > stepper_type;
 		runge_kutta4< entorhinal_cortex::state_type > rk;
-		void time_step(int i, runge_kutta4< entorhinal_cortex::state_type > rk, entorhinal_cortex::state_type x, double t, double dt);
 		static void rhs( const double x , double &dxdt , const double t );
 		static void sys( const entorhinal_cortex::state_type &x , entorhinal_cortex::state_type &dxdt , const double t );
 		static void sys2( const double x , double &dxdt , const double t );
 		void write_cout();
-		void spike_train(double V);
+		void spike_train();
 		double refractory(double x, double refrac_threshold);
 		void process_activity(std::vector<double> detected_moves);
 		void compute_cell_locations(entorhinal_cortex::grid_cells ***grid_cell_populations, int GRID_POPULATION_NUMBER, int GRID_POPULATION_SIZE,
