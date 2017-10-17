@@ -50,7 +50,7 @@ void entorhinal_cortex::time_step()
 	double Isyn = 0.0;
 	double E_AMPA = 0.0, E_NMDA = 0.0, E_GABA_A = -75.0;
 	double Vm = 0.0;
-	double Im = 0.0, Iext = 1.1, n = 0.0;
+	double Im = 0.0, Iext = 50.1, n = 0.0;
 	double Cm_exc = 211.389, Cm_inh = 227.3;
 	double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
 

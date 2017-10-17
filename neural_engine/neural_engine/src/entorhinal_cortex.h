@@ -52,7 +52,7 @@ using namespace boost::numeric::odeint;
 		void time_step();
 		double dirac(double t1, double t2);
 
-		int time_span = 20;//200;
+		int time_span = 200;//200;
 		double refrac_threshold = 9.9;
 		std::vector<double> x_data, y_data;
 	};
