@@ -21,7 +21,7 @@ Similar methods to those of an existing Sheynikhovich, et al., 3d maze simulatio
 
 Presently functional:
 * Saved images from the maze are processed by a Gabor filter using OpenCV. That will be visual stimulus input into neural networks of spatial memory cells to learn the maze.
-* Differential equations solver is working with odeint, that can generate synapse signalling differential equations if needed. Plotting is operational with matplotlibcpp.
+* Differential equations solver is working with odeint, that can generate synapse signalling differential equations if needed. Plotting is operational with matplotlibcpp. Exponential integrate-and-fire neuron current with refractory period has been tested.
 * Grid cell populations are generated as multidimentional struct arrays which contain pertinant variables (i.e., membrane voltage and neuron location).
 Presently 6 populations of 5x5 neuron grid formations are included.
 * Synaptic current for each neuron has been implemented through corresponding formulas. All-to-all connections within grid cell populations have been tested over several time 
