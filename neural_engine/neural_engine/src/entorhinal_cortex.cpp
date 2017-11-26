@@ -30,6 +30,37 @@ entorhinal_cortex::grid_cells** entorhinal_cortex::entorhinal_cortex::create_gri
 	return grid_population;
 }
 
+void entorhinal_cortex::move_place(int i, int j, int i2, int j2)
+{
+	/*
+	 * Move poatition for movement test by deactivating prior
+	 * place cell position firing variable and activating one
+	 * in a new location.
+	 */
+	double deactivation_voltage = 0.0;
+	double activation_voltage = 50.1;
+	grid_cell_populations[i][j]->Iext = deactivation_voltage;
+	grid_cell_populations[i2][j2]->Iext = activation_voltage;
+}
+
+void entorhinal_cortex::movement_test(int time_unit)
+{
+	switch(time_unit)
+	{
+	case 0 ... 20: {move_place(0, 1, 0, 0);break;}
+	case 21 ... 40: {move_place(0, 0, 0, 1);break;}
+	case 41 ... 60: {move_place(0, 1, 0, 5);break;}
+	case 61 ... 80: {move_place(0, 5, 0, 6);break;}
+	case 81 ... 100: {move_place(0, 6, 0, 7);break;}
+	case 101 ... 120: {move_place(0, 7, 0, 13);break;}
+	case 121 ... 140: {move_place(0, 13, 0, 12);break;}
+	case 141 ... 160: {move_place(0, 12, 0, 17);break;}
+	case 161 ... 180: {move_place(0, 17, 0, 18);break;}
+	case 181 ... 199: {move_place(0, 18, 0, 23);break;}
+	}
+
+}
+
 void entorhinal_cortex::time_step()
 {
 	/*
@@ -47,10 +78,10 @@ void entorhinal_cortex::time_step()
 	 */
 
 	double i2, j2;
-	double Isyn = 0.0;
+	double Isyn = 0.0, Iext = 0.0;
 	double E_AMPA = 0.0, E_NMDA = 0.0, E_GABA_A = -75.0;
 	double Vm = 0.0;
-	double Im = 0.0, Iext = 50.1, n = 0.0;
+	double Im = 0.0, n = 0.0;
 	double Cm_exc = 211.389, Cm_inh = 227.3;
 	double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
 
@@ -67,11 +98,15 @@ void entorhinal_cortex::time_step()
 			Vm = grid_cell_populations[i][j]->V;
 
 			Isyn = *g_GABA_A*(E_GABA_A-Vm)+*g_AMPA*(E_AMPA-Vm)+*g_NMDA*(E_NMDA-Vm);
-
+			Iext = *&grid_cell_populations[i][j]->Iext;
 
 			Vm = (Im + Isyn + Iext + n)/Cm_exc;
 			grid_cell_populations[i][j]->V += Vm; // using += for testing
+
+			if (i == 0) {cout<<floor(grid_cell_populations[i][j]->V*100);cout<<" ";}
+			//if (i == 0) {cout<<floor(Iext*100);cout<<" ";}
 		}
+		if (i == 0) {cout<<"\n";}
 	}
 }
 
@@ -261,6 +296,7 @@ void entorhinal_cortex::spike_train() {
 		t += dt;
 		*x = refractory(*x, refrac_threshold);
 
+		movement_test(i);
 		time_step();
 		integrate_const( rk2 , sys2 , *x , t , (t+dt) , dt);
 		x_data.push_back(*x);

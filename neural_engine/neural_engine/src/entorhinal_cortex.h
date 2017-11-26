@@ -24,6 +24,7 @@ using namespace boost::numeric::odeint;
 			double C = 0.03;
 			double e_i_p = 1.0;
 			double g_AMPA = 1.0, g_NMDA = 1.0, g_GABA_A = 1.0, g_EE = 1.0;
+			double Iext = 0.0;
 			//runge_kutta4< boost::array<double, 3> > rk;
 		};
 		int GRID_POPULATION_NUMBER = 6;
@@ -51,6 +52,8 @@ using namespace boost::numeric::odeint;
 		void synapse(entorhinal_cortex::grid_cells ***grid_cell_populations, int i, int j, string syn_type);
 		void time_step();
 		double dirac(double t1, double t2);
+		void movement_test(int time_unit);
+		void move_place(int i, int j, int i2, int j2);
 
 		int time_span = 200;//200;
 		double refrac_threshold = 9.9;
