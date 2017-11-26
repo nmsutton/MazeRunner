@@ -103,10 +103,10 @@ void entorhinal_cortex::time_step()
 			Vm = (Im + Isyn + Iext + n)/Cm_exc;
 			grid_cell_populations[i][j]->V += Vm; // using += for testing
 
-			if (i == 0) {cout<<floor(grid_cell_populations[i][j]->V*100);cout<<" ";}
+			//if (i == 0) {cout<<floor(grid_cell_populations[i][j]->V*100);cout<<" ";}
 			//if (i == 0) {cout<<floor(Iext*100);cout<<" ";}
 		}
-		if (i == 0) {cout<<"\n";}
+		//if (i == 0) {cout<<"\n";}
 	}
 }
 
