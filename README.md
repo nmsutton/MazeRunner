@@ -26,7 +26,7 @@ Presently 6 populations of 5x5 neuron grid formations are included.
 steps and found to be computing successfully. Some simplifications were made (i.e., refractory period and dirac delta) but more complex methods can be
 included in the implementation in the future.
 * Efficient memory management is included through pointers avoiding hard copying values. E.g., voltages and synaptic currents.
-* Basic sample movement testing has been added. Place cells increase firing in a test location movement pattern. Through the external current variable that is affected by place cells, the grid cells have their firing activity correspondingly increased. A simple form of traveling increased activity as a bump in the grid formation of grid cells has been observed and further bump dynamics will be added through additional math formulas.
+* Basic sample movement testing has been added. Place cells increase firing in a test location movement pattern. This sequence will be expanded on to include the bump attractor initialisation component present in the methods this work is based from. The external current variable that is affected by place cells is used to correspondingly increase the grid cells firing activity. A simple form of traveling increased activity as a bump in the grid formation of grid cells has been tested and observed, and further bump dynamics will be added through additional math formulas.
 
 ## Methods to Work with the Code
 ./3d_simulated_maze/
@@ -74,6 +74,7 @@ Gabor Filtering:
 \[10\] Diba K, Buzsáki G. Hippocampal network dynamics constrain the time lag between pyramidal cells across modified environments. J Neurosci. 2008;28(50):13448-56. Open Access Data: [hc-3 at crcns.org](http://crcns.org/data-sets/hc/hc-3)
 
 \[11\] Hafting T, Fyhn M, Bonnevie T, Moser MB, Moser EI. Hippocampus-independent phase precession in entorhinal grid cells. Nature. 2008;453(7199):1248-52. Open Access Data: [data at ntnu.edu](ntnu.edu/kavli/research/grid-cell-data)
+
 
 
 
