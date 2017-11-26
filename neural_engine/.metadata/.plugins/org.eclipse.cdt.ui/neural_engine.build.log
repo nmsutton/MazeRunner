@@ -1,4 +1,4 @@
-19:48:01 **** Incremental Build of configuration Debug for project neural_engine ****
+20:16:17 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/entorhinal_cortex.cpp
 Invoking: GCC C++ Compiler
@@ -37,5 +37,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hi
 Finished building target: neural_engine
  
 
-19:48:05 Build Finished (took 4s.221ms)
+20:16:21 Build Finished (took 4s.339ms)
 

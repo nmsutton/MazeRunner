@@ -287,18 +287,26 @@ void entorhinal_cortex::spike_train() {
 
 	runge_kutta_dopri5< double > rk2;
     double * x;
-    x = &grid_cell_populations[0][0]->V;
     double t = 0.0;
 	const double dt = 0.0025;//0.1;//0.0025;
 
 	//integrate_const( rk2 , rhs , x , 1.0 , 10.0 , 0.1, write_cout );
 	for (int i = 0; i < time_span; i++) {
 		t += dt;
-		*x = refractory(*x, refrac_threshold);
 
 		movement_test(i);
 		time_step();
-		integrate_const( rk2 , sys2 , *x , t , (t+dt) , dt);
+
+		for (int i = 0; i < GRID_POPULATION_NUMBER; i++)
+		{
+			for (int j = 0; j < GRID_POPULATION_SIZE; j++)
+			{
+				x = &grid_cell_populations[i][j]->V;
+				*x = refractory(*x, refrac_threshold);
+				integrate_const( rk2 , sys2 , *x , t , (t+dt) , dt);
+			}
+		}
+		x = &grid_cell_populations[0][18]->V;
 		x_data.push_back(*x);
 	}
 
