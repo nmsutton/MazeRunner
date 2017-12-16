@@ -13,9 +13,9 @@ Currently included:
 
 ## Neural Computation
 
-Grid and place cells, and oscillatory rhythms will be modeled. That area of modeling is an evolving area of science. Based on my latest readings I plan to include continuous attractor network (CAN) models and ramping membrane potential dynamics \[1\]\[2\]. For example, potentially work based off of models by Solanka, et al. or Si, et al. \[3\]\[4\]. A known issue with CAN models are the often lack of inclusion of mechanisms for phase procession relative to theta rhythms. A possible method to address that is to have a hybrid model with oscillatory interference \[5\]\[6\]. Oscillatory interference has had some challenges presented to it by studies on bats, mice, and others; using it or a different approach will need to be evaluated \[7\]\[8\]. The simulation can potentially include multiple models and compare and contrast them. It is a work in progress to determine which of the latest models will be initially included.
+Grid and place cells, and oscillatory rhythms are modeled. Those areas of modeling are evolving areas of science. Contained in the work are continuous attractor network (CAN) models and ramping membrane potential dynamics [1][2]. The CAN formulas are from work by Dr. Mathew Nolan’s lab [3]. A known issue with CAN models are the often lack of inclusion of mechanisms for phase procession relative to theta rhythms. A possible method to address that is to have a hybrid model with oscillatory interference [4][5]. Work by Dr. Michael Hasselmo’s lab is being researched for inclusion for such purposes [6]. Oscillatory interference has had some challenges presented to it by studies on bats, mice, and others; learning from such studies will be done to address the knowledge found [7][8]. The simulation can potentially include multiple models and compare and contrast them. The system is being designed with a goal to flexibly add more models over time.
 
-Similar methods to those of an existing Sheynikhovich, et al., 3d maze simulation will be included \[9\]. Recreation of observed mouse neural activity will be used in the maze tasks as a ground truth for training and testing models. A source of in vivo recorded activity will be the open access data from Dr. Gyorgy Buzsáki's lab that was obtained in spatial memory task experiments \[10\]. Another source of data can be from the Kavli Institute of Systems Neuroscience \[11\]. Theories of neural mechanisms can be explored through modifying neural properties. Eventual work can include addressing open questions existing in the current state of spatial memory models.
+Similar methods to those of an existing Sheynikhovich, et al., 3d maze simulation will be included [9]. Recreation of observed mouse neural activity will be used in the maze tasks as a ground truth for training and testing models. A source of in vivo recorded activity will be the open access data from Dr. Gyorgy Buzsáki's lab that was obtained in spatial memory task experiments [10]. Another source of data can be from the Kavli Institute of Systems Neuroscience [11]. Theories of neural mechanisms can be explored through modifying neural properties. Eventual work can include addressing open questions existing in the current state of spatial memory models.
 
 Presently functional:
 * Saved images from the maze are processed by a Gabor filter using OpenCV. That will be visual stimulus input into neural networks of spatial memory cells to learn the maze.
@@ -59,11 +59,11 @@ Gabor Filtering:
 
 \[3\] Solanka L., van Rossum M.C.W., Nolan, M.F. Noise promotes independent control of gamma oscillations and grid firing within a recurrent attractor network. eLife 2015;10.7554/eLife.06444.
 
-\[4\] Si B, Romani S, Tsodyks M. Continuous attractor network model for conjunctive position-by-velocity tuning of grid cells. PLoS Comput Biol. 2014;10(4):e1003558.
+\[4\] Schmidt-hieber C, Häusser M. Cellular mechanisms of spatial navigation in the medial entorhinal cortex. Nat Neurosci. 2013;16(3):325-31.
 
-\[5\] Schmidt-hieber C, Häusser M. Cellular mechanisms of spatial navigation in the medial entorhinal cortex. Nat Neurosci. 2013;16(3):325-31.
+\[5\] Bush D, Burgess N. A hybrid oscillatory interference/continuous attractor network model of grid cell firing. J Neurosci. 2014;34(14):5065-79.
 
-\[6\] Bush D, Burgess N. A hybrid oscillatory interference/continuous attractor network model of grid cell firing. J Neurosci. 2014;34(14):5065-79.
+\[6\] Shay, C. F., Ferrante, M., Chapman, G. W., & Hasselmo, M. E. (2016). Rebound spiking in layer II medial entorhinal cortex stellate cells: Possible mechanism of grid cell function. Neurobiology of Learning and Memory, 129, 83–98. https://doi.org/10.1016/j.nlm.2015.09.004
 
 \[7\] Yartsev MM, Witter MP, Ulanovsky N. Grid cells without theta oscillations in the entorhinal cortex of bats. Nature. 2011;479(7371):103-7.
 
