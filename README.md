@@ -1,6 +1,8 @@
 # MazeRunner
 Neuroscience modeling of spatial memory using a 3d mouse maze simulation.
 
+For more details on my past work please visit: <a href="http://nmsutton.herokuapp.com/" target="_blank">nmsutton.herokuapp.com</a> .
+
 ## 3d Maze
 
 A maze has been built in Unreal Engine 4 (UE4).  UE4 offers many advantages in simulation capabilities as well as being able to be controlled directly through C++ source code.
