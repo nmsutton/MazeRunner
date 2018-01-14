@@ -38,6 +38,8 @@ using namespace boost::numeric::odeint;
 		grid_cells** new_pop;
 		grid_cells*** grid_cell_populations = new grid_cells**[GRID_POPULATION_SIZE];
 		//int active_grid_cell[2] = {{0,0}};
+		double PC_R_MAX = 50;
+		double PC_FIELD_WIDTH = 20;
 
 		entorhinal_cortex();
 		~entorhinal_cortex();
