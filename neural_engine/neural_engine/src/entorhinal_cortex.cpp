@@ -32,13 +32,19 @@ entorhinal_cortex::grid_cells** entorhinal_cortex::entorhinal_cortex::create_gri
 
 double entorhinal_cortex::velocity_current(int i, int j, int i2, int j2)
 {
+	/*
+	 * Velocity current is calculated. injected_velocity_scaling variable is used
+	 * for attaining excepted results for testing until further development on
+	 * signal values are added.
+	 */
+
 	double bump_speed = 1.0;
 	double * Vvel_magnitude = &grid_cell_populations[i][j]->Vvel;
 	double * V = Vvel_magnitude;
 	double Nx = (double) GRID_POPULATION_HORIZ_SIZE * col_spacing;
 	double l_grid = col_spacing;
-	//Vvel_magnitude = &grid_cell_populations[i][j]->Vvel;
-	double a = bump_speed*(*Vvel_magnitude);
+	double injected_velocity_scaling = .1;
+	double a = bump_speed*(*Vvel_magnitude)*injected_velocity_scaling;
 
 	double Cv = Nx / (a*l_grid);
 	double e_i_p = grid_cell_populations[i][j]->e_i_p;
@@ -57,7 +63,7 @@ void entorhinal_cortex::move_place(int i, int j, int i2, int j2)
 	double deactivation_voltage = 0.0;
 	double activation_voltage = 50.1;
 
-	grid_cell_populations[i][j]->Vvel = activation_voltage*3.0;
+	grid_cell_populations[i][j]->Vvel = activation_voltage;
 	double I_vel = velocity_current(i, j, i2, j2);
 
 	grid_cell_populations[i][j]->Iext = deactivation_voltage;
