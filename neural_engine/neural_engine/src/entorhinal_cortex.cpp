@@ -30,6 +30,23 @@ entorhinal_cortex::grid_cells** entorhinal_cortex::entorhinal_cortex::create_gri
 	return grid_population;
 }
 
+double entorhinal_cortex::velocity_current(int i, int j, int i2, int j2)
+{
+	double bump_speed = 1.0;
+	double * Vvel_magnitude = &grid_cell_populations[i][j]->Vvel;
+	double * V = Vvel_magnitude;
+	double Nx = (double) GRID_POPULATION_HORIZ_SIZE * col_spacing;
+	double l_grid = col_spacing;
+	//Vvel_magnitude = &grid_cell_populations[i][j]->Vvel;
+	double a = bump_speed*(*Vvel_magnitude);
+
+	double Cv = Nx / (a*l_grid);
+	double e_i_p = grid_cell_populations[i][j]->e_i_p;
+	double I_vel = Cv*(*V)*e_i_p;
+
+	return I_vel;
+}
+
 void entorhinal_cortex::move_place(int i, int j, int i2, int j2)
 {
 	/*
@@ -39,8 +56,12 @@ void entorhinal_cortex::move_place(int i, int j, int i2, int j2)
 	 */
 	double deactivation_voltage = 0.0;
 	double activation_voltage = 50.1;
+
+	grid_cell_populations[i][j]->Vvel = activation_voltage*3.0;
+	double I_vel = velocity_current(i, j, i2, j2);
+
 	grid_cell_populations[i][j]->Iext = deactivation_voltage;
-	grid_cell_populations[i2][j2]->Iext = activation_voltage;
+	grid_cell_populations[i2][j2]->Iext = I_vel;
 }
 
 void entorhinal_cortex::movement_test(int time_unit)
