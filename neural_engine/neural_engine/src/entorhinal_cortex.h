@@ -1,6 +1,8 @@
 #ifndef entorhinal_cortex_H
 #define entorhinal_cortex_H
 
+#include "hippocampus.h"
+
 #include <iostream>
 #include <boost/array.hpp>
 
@@ -37,9 +39,10 @@ using namespace boost::numeric::odeint;
 		char POPULATION_TYPE[2] = {'E', 'I'};
 		grid_cells** new_pop;
 		grid_cells*** grid_cell_populations = new grid_cells**[GRID_POPULATION_SIZE];
+		double deactivation_voltage = 0.0;
+		double activation_voltage = 50.1;
+		hippocampus * hippocampus_module;
 		//int active_grid_cell[2] = {{0,0}};
-		double PC_R_MAX = 50;
-		double PC_FIELD_WIDTH = 20;
 
 		entorhinal_cortex();
 		~entorhinal_cortex();
@@ -61,6 +64,7 @@ using namespace boost::numeric::odeint;
 		double dirac(double t1, double t2);
 		void movement_test(int time_unit);
 		void move_place(int i, int j, int i2, int j2);
+		void set_hippocampus_module(hippocampus * hippocampus_module_ptr);
 
 		int time_span = 200;//200;
 		double refrac_threshold = 9.9;

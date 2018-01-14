@@ -60,14 +60,25 @@ void entorhinal_cortex::move_place(int i, int j, int i2, int j2)
 	 * place cell position firing variable and activating one
 	 * in a new location.
 	 */
-	double deactivation_voltage = 0.0;
-	double activation_voltage = 50.1;
+	double deactivation_voltage;
+	deactivation_voltage = entorhinal_cortex::deactivation_voltage;
+	double activation_voltage;
+	activation_voltage = entorhinal_cortex::activation_voltage;
+	double I_const = 0.0, I_theta = 0.0;
+	//double * I_vel, * I_place;
+	double I_vel, I_place;
 
+	//grid_cell_populations[i][j]->Vvel = *activation_voltage;
 	grid_cell_populations[i][j]->Vvel = activation_voltage;
-	double I_vel = velocity_current(i, j, i2, j2);
+	I_vel = velocity_current(i, j, i2, j2);
+	//I_place = 0.0;
 
+	I_place = hippocampus_module->process_activity(i, j, i2, j2);
+
+	//grid_cell_populations[i][j]->Iext = *deactivation_voltage;
 	grid_cell_populations[i][j]->Iext = deactivation_voltage;
-	grid_cell_populations[i2][j2]->Iext = I_vel;
+	//grid_cell_populations[i2][j2]->Iext = I_const + I_theta + *I_vel + *I_place;
+	grid_cell_populations[i2][j2]->Iext = I_const + I_theta + I_vel + I_place;
 }
 
 void entorhinal_cortex::movement_test(int time_unit)
@@ -361,4 +372,9 @@ void entorhinal_cortex::process_activity(std::vector<double> detected_moves)
 	 */
 
     spike_train();
+}
+
+void entorhinal_cortex::set_hippocampus_module(hippocampus * hippocampus_module_ptr)
+{
+	hippocampus_module = hippocampus_module_ptr;
 }

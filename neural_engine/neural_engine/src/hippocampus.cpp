@@ -14,7 +14,7 @@ hippocampus::hippocampus()
 {
 	for (int i = 0; i < PLACE_POPULATION_NUMBER; i++) {
 		new_pop = create_place_population();
-		grid_cell_populations[i] = new_pop;
+		place_cell_populations[i] = new_pop;
 	}
 }
 
@@ -60,4 +60,36 @@ void hippocampus::compute_cell_locations(hippocampus::place_cells ***place_cell_
 			//cout << " i: " << i << " j: " << j << " x: " << grid_cell_populations[(int) i][(int) j]->pos_x << " y: " << grid_cell_populations[(int) i][(int) j]->pos_y << "\n";
 		}
 	}
+}
+
+double hippocampus::distance(int i, int j, int i2, int j2)
+{
+	//place_cell_populations[(int) i][(int) j]->pos_x
+	double * x1 = &place_cell_populations[i][j]->pos_x;
+	double * x2 = &place_cell_populations[i2][j2]->pos_x;
+	double * y1 = &place_cell_populations[i][j]->pos_y;
+	double * y2 = &place_cell_populations[i2][j2]->pos_y;
+	double * z1 = &place_cell_populations[i][j]->pos_z;
+	double * z2 = &place_cell_populations[i2][j2]->pos_z;
+	return sqrt(pow((*x2-*x1),2)+pow((*y2-*y1),2)+pow((*z2-*z1),2));
+}
+
+double hippocampus::process_activity(int i, int j, int i2, int j2)
+{
+	double dist_from_center = distance(i, j, i2, j2);
+	double r = hippocampus::R_MAX * exp(-(pow(dist_from_center, 2)/(2*(pow(hippocampus::FIELD_WIDTH,2)))));
+
+	r *= place_to_grid_strength(i, j, i2, j2);
+
+	return r;
+}
+
+double hippocampus::place_to_grid_strength(int i, int j, int i2, int j2)
+{
+	double dist_place_to_grid = distance(i, j, i2, j2);
+	/*double * connection_weight;
+	connection_weight = &hippocampus::PLACE_TO_GRID_STRENGTH_MAX * exp(-(pow(dist_place_to_grid, 2)/2*(pow(hippocampus::SYNAPTIC_PROFILE_WIDTH, 2))));
+
+	return *connection_weight;*/
+	return hippocampus::PLACE_TO_GRID_STRENGTH_MAX * exp(-(pow(dist_place_to_grid, 2)/2*(pow(hippocampus::SYNAPTIC_PROFILE_WIDTH, 2))));
 }
