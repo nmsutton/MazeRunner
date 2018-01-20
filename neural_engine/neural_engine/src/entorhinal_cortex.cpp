@@ -47,7 +47,7 @@ double entorhinal_cortex::velocity_current(int i, int j, int i2, int j2)
 	double a = bump_speed*(*Vvel_magnitude)*injected_velocity_scaling;
 
 	double Cv = Nx / (a*l_grid);
-	double e_i_p = grid_cell_populations[i][j]->e_i_p;
+	double e_i_p = 1.0;//grid_cell_populations[i][j]->e_i_p;
 	double I_vel = Cv*(*V)*e_i_p;
 
 	return I_vel;
@@ -270,7 +270,11 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 
 	double row_length = floor(sqrt(GRID_POPULATION_SIZE));
 	double row = 0, col = 0;
+	int grid_row = 0, grid_offset = 0;
+	int grid_offset_max = 8, grid_top_row = 7, grid_middle_row = 3;
+	double grid_row_size = 3.0;
 	double stagger = 0;
+	double directions[] = {-1.0, -1.0, -0.5, 0.0, 0.5, 1.0, 1.0}; // d d l c r u u
 
 	for (double i = 0; i < GRID_POPULATION_NUMBER; i++)
 	{
@@ -279,7 +283,22 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 		{
 			row = floor(j / row_length);
 			col = j - (row*row_length);
-			if (((int) row % 2) > 0.2) {stagger = .5 * row_spacing;} else {stagger = 0;}
+			grid_row = floor(j / grid_row_size);
+			grid_offset = grid_row % grid_offset_max;
+			if (((int) row % 3) < 0.2)
+				{
+				grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_top_row + grid_offset + (int) col)];
+				}
+			else if (((int) row % 2) < 0.2)
+				{
+				grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+				stagger = .5 * row_spacing;
+				}
+			else
+				{
+				grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+				stagger = 0;
+				}
 			grid_cell_populations[(int) i][(int) j]->pos_x = (col * row_spacing) + stagger;
 			grid_cell_populations[(int) i][(int) j]->pos_y = row * col_spacing;
 			grid_cell_populations[(int) i][(int) j]->pos_z = 0.0;
