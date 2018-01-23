@@ -274,9 +274,9 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 	double row_length = floor(sqrt(GRID_POPULATION_SIZE));
 	double row = 0, col = 0;
 	int grid_row = 0, grid_offset = 0, total_dir = 8;
-	int grid_offset_max = 8, grid_top_row = 7, grid_middle_row = 3;
+	int grid_offset_max = 8, grid_top_row = 5, grid_middle_row = 2;
 	int current_direction = 0;
-	int grid_max_row = 3.0;
+	double grid_max_row = 3.0;
 	double stagger = 0;
 	double left[2] = {-1.0, 0.0}, right[2] = {1.0, 0.0}, center[2] = {0.0, 0.0}, up[2] = {0.0, 1.0}, down[2] = {0.0, -1.0};
 	double directions[total_dir][2] = {{down[0], down[1]}, {down[0], down[1]}, {left[0], left[1]}, {center[0], center[1]},
@@ -289,20 +289,22 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 		{
 			row = floor(j / row_length);
 			col = j - (row*row_length);
-			grid_row = (((int) row) % grid_max_row);
+			grid_row = floor(row / grid_max_row);
 			grid_offset = ((grid_row) % grid_offset_max);
-			if (row > 3 && ((int) row % 3) < 0.2)
+			if (row >= 1.9 && (((int) row + 1) % 3) < 0.2)
 				{
 				current_direction = ((grid_top_row + grid_offset + (int) col) % total_dir);
 				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
 				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
+				cout << "row "<<row<<" and 3\t";
 				}
-			else if (row > 2 && ((int) row % 2) < 0.2)
+			else if (row >= .9 && (((int) row + 1) % 2) < 0.2)
 				{
 				current_direction = ((grid_middle_row + grid_offset + (int) col) % total_dir);
 				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
 				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
 				stagger = .5 * row_spacing;
+				cout << "row "<<row<<" and 2 \t";
 				}
 			else
 				{
@@ -310,6 +312,7 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
 				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
 				stagger = 0;
+				cout << "row "<<row<<" and 1\t";
 				}
 			grid_cell_populations[(int) i][(int) j]->pos_x = (col * row_spacing) + stagger;
 			grid_cell_populations[(int) i][(int) j]->pos_y = row * col_spacing;
