@@ -24,7 +24,7 @@ using namespace boost::numeric::odeint;
 			double V;
 			double pos_x = 0.0, pos_y = 0.0, pos_z = 0.0;
 			double C = 0.03;
-			double e_i_p = 1.0;
+			double e_i_p[2] = {0.0, 0.0};// e_i_p[0] = 0.0; e_i_p[1] = 1.0;//= {0.0, 0.0};
 			double g_AMPA = 1.0, g_NMDA = 1.0, g_GABA_A = 1.0, g_EE = 1.0;
 			double Iext = 0.0;
 			double Vvel = 0.0;

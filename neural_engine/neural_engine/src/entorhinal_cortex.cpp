@@ -172,7 +172,7 @@ double entorhinal_cortex::distance(entorhinal_cortex::grid_cells ***grid_cell_po
 	double z1 = grid_cell_populations[i][j]->pos_z;
 	double z2 = grid_cell_populations[i2][j2]->pos_z;
 	double C = grid_cell_populations[i][j]->C;
-	double e_i_p = grid_cell_populations[i][j]->e_i_p;
+	double e_i_p = 1.0;//grid_cell_populations[i][j]->e_i_p;
 	if (syn_type == "ie") {C = 0.0; e_i_p = 0.0;}
 	double euclidean = sqrt(pow((x2-x1),2)+pow((y2-y1),2)+pow((z2-z1),2));
 	//cout << "dist i: " << i << " j: " << j << "n";
@@ -270,11 +270,14 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 
 	double row_length = floor(sqrt(GRID_POPULATION_SIZE));
 	double row = 0, col = 0;
-	int grid_row = 0, grid_offset = 0;
+	int grid_row = 0, grid_offset = 0, total_dir = 8;
 	int grid_offset_max = 8, grid_top_row = 7, grid_middle_row = 3;
+	int * current_direction;
 	double grid_row_size = 3.0;
 	double stagger = 0;
-	double directions[] = {-1.0, -1.0, -0.5, 0.0, 0.5, 1.0, 1.0}; // d d l c r u u
+	double left[2] = {-1.0, 0.0}, right[2] = {1.0, 0.0}, center[2] = {0.0, 0.0}, up[2] = {0.0, 1.0}, down[2] = {0.0, -1.0};
+	double directions[total_dir][2] = {{down[0], down[1]}, {down[0], down[1]}, {left[0], left[1]}, {center[0], center[1]},
+							   {right[0], right[1]}, {up[0], up[1]}, {up[0], up[1]}};//{-1.0, -1.0, -0.5, 0.0, 0.5, 1.0, 1.0}; // d d l c r u u
 
 	for (double i = 0; i < GRID_POPULATION_NUMBER; i++)
 	{
@@ -287,16 +290,22 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 			grid_offset = grid_row % grid_offset_max;
 			if (((int) row % 3) < 0.2)
 				{
-				grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_top_row + grid_offset + (int) col)];
+				*current_direction = (grid_top_row + grid_offset + (int) col) % total_dir;
+				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[*current_direction][0];
+				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[*current_direction][1];
 				}
 			else if (((int) row % 2) < 0.2)
 				{
-				grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+				*current_direction = (grid_middle_row + grid_offset + (int) col) % total_dir;
+				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[*current_direction][0];
+				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[*current_direction][1];
 				stagger = .5 * row_spacing;
 				}
 			else
 				{
-				grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+				*current_direction = (grid_offset + (int) col) % total_dir;
+				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[*current_direction][0];
+				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[*current_direction][1];
 				stagger = 0;
 				}
 			grid_cell_populations[(int) i][(int) j]->pos_x = (col * row_spacing) + stagger;
@@ -305,6 +314,7 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 
 			// print locations
 			//cout << " i: " << i << " j: " << j << " x: " << grid_cell_populations[(int) i][(int) j]->pos_x << " y: " << grid_cell_populations[(int) i][(int) j]->pos_y << "\n";
+			cout << " i: " << i << " j: " << j << "||\t\t\te_i_p[0] " << grid_cell_populations[(int) i][(int) j]->e_i_p[0] << "\t\t\t\t||\t\t\t\te_i_p[1]:   " << grid_cell_populations[(int) i][(int) j]->e_i_p[1] << "\n";
 		}
 	}
 }

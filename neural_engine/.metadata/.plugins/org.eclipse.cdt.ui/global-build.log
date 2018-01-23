@@ -24606,3 +24606,1143 @@ Invoking: GCC C++ Linker
 g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 Finished building target: neural_engine
  
+11:43:36 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:23: error: expected identifier before numeric constant
+    double e_i_p[2] = [0.0, 0.0];
+                       ^
+../src/entorhinal_cortex.h:27:26: error: expected ‘]’ before ‘,’ token
+    double e_i_p[2] = [0.0, 0.0];
+                          ^
+../src/entorhinal_cortex.h: In lambda function:
+../src/entorhinal_cortex.h:27:26: error: expected ‘{’ before ‘,’ token
+../src/entorhinal_cortex.h: At global scope:
+../src/entorhinal_cortex.h:27:26: error: array must be initialized with a brace-enclosed initializer
+../src/entorhinal_cortex.h:27:26: error: expected ‘;’ before ‘,’ token
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:278:66: error: scalar object ‘directions’ requires one element in initializer
+  double directions[[]] = {down, down, left, center, right, up, up};//{-1.0, -1.0, -0.5, 0.0, 0.5, 1.0, 1.0}; // d d l c r u u
+                                                                  ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:322:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+18:40:02 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:23: error: expected identifier before numeric constant
+    double e_i_p[2] = [0.0, 0.0];
+                       ^
+../src/entorhinal_cortex.h:27:26: error: expected ‘]’ before ‘,’ token
+    double e_i_p[2] = [0.0, 0.0];
+                          ^
+../src/entorhinal_cortex.h: In lambda function:
+../src/entorhinal_cortex.h:27:26: error: expected ‘{’ before ‘,’ token
+../src/entorhinal_cortex.h: At global scope:
+../src/entorhinal_cortex.h:27:26: error: array must be initialized with a brace-enclosed initializer
+../src/entorhinal_cortex.h:27:26: error: expected ‘;’ before ‘,’ token
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+  double directions[8][2] = {{down}, {down}, {left}, {center}, {right}, {up}, {up}};//{-1.0, -1.0, -0.5, 0.0, 0.5, 1.0, 1.0}; // d d l c r u u
+                                                                                  ^
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+../src/entorhinal_cortex.cpp:278:82: error: cannot convert ‘double*’ to ‘double’ in initialization
+../src/entorhinal_cortex.cpp:296:52: error: invalid array assignment
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+../src/entorhinal_cortex.cpp:301:52: error: invalid array assignment
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:322:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+make: *** [src/entorhinal_cortex.o] Error 1
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+18:42:06 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:23: error: expected identifier before numeric constant
+    double e_i_p[2] = [0.0, 0.0];
+                       ^
+../src/entorhinal_cortex.h:27:26: error: expected ‘]’ before ‘,’ token
+    double e_i_p[2] = [0.0, 0.0];
+                          ^
+../src/entorhinal_cortex.h: In lambda function:
+../src/entorhinal_cortex.h:27:26: error: expected ‘{’ before ‘,’ token
+../src/entorhinal_cortex.h: At global scope:
+../src/entorhinal_cortex.h:27:26: error: array must be initialized with a brace-enclosed initializer
+../src/entorhinal_cortex.h:27:26: error: expected ‘;’ before ‘,’ token
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: invalid array assignment
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+../src/entorhinal_cortex.cpp:302:52: error: invalid array assignment
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+18:42:49 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: invalid array assignment
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+../src/entorhinal_cortex.cpp:302:52: error: invalid array assignment
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+18:45:16 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:37: error: array must be initialized with a brace-enclosed initializer
+    array<double,2> e_i_p = {0.0, 0.0};
+                                     ^
+../src/entorhinal_cortex.h:27:37: error: too many initializers for ‘std::array<double, 2ul>’
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp:302:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+18:45:56 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:42: error: array must be initialized with a brace-enclosed initializer
+    std::array<double,2> e_i_p = {0.0, 0.0};
+                                          ^
+../src/entorhinal_cortex.h:27:42: error: too many initializers for ‘std::array<double, 2ul>’
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp:302:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+19:00:25 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:43: error: array must be initialized with a brace-enclosed initializer
+    std::array<double, 2> e_i_p = {0.0, 0.0};
+                                           ^
+../src/entorhinal_cortex.h:27:43: error: too many initializers for ‘std::array<double, 2ul>’
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp:302:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+19:00:48 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp:302:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+19:01:05 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp:302:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+19:03:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:297:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_middle_row + grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp:302:52: error: no match for ‘operator=’ (operand types are ‘std::array<double, 2ul>’ and ‘double [2]’)
+     grid_cell_populations[(int) i][(int) j]->e_i_p = directions[(grid_offset + (int) col)];
+                                                    ^
+In file included from /usr/include/boost/serialization/array.hpp:14:0,
+                 from /usr/include/boost/numeric/ublas/storage.hpp:21,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/odeint/util/ublas_wrapper.hpp:23,
+                 from /usr/include/boost/numeric/odeint.hpp:25,
+                 from ../src/entorhinal_cortex.h:9,
+                 from ../src/entorhinal_cortex.cpp:1:
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(const std::array<double, 2ul>&)
+     struct array
+            ^
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘const std::array<double, 2ul>&’
+/usr/include/c++/5/array:89:12: note: candidate: std::array<double, 2ul>& std::array<double, 2ul>::operator=(std::array<double, 2ul>&&)
+/usr/include/c++/5/array:89:12: note:   no known conversion for argument 1 from ‘double [2]’ to ‘std::array<double, 2ul>&&’
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:323:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:324:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+23:21:11 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:30: error: too many initializers for ‘double [0]’
+    double e_i_p[] = {0.0, 0.0};
+                              ^
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+23:23:23 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:32: error: too many initializers for ‘double [0]’
+    double e_i_p[] = {{0.0, 0.0}};
+                                ^
+../src/entorhinal_cortex.h:27:32: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘double’ in initialization
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+23:24:42 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:30: error: too many initializers for ‘double [0]’
+    double e_i_p[] = {0.0, 0.0};
+                              ^
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+21:36:00 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:37:23 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:33 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:01 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:58 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:21: error: ‘e_i_p’ does not name a type
+    double e_i_p[2]; e_i_p[0] = 0.0; e_i_p[1] = 1.0;//= {0.0, 0.0};
+                     ^
+../src/entorhinal_cortex.h:27:37: error: ‘e_i_p’ does not name a type
+    double e_i_p[2]; e_i_p[0] = 0.0; e_i_p[1] = 1.0;//= {0.0, 0.0};
+                                     ^
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+21:39:53 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:1:0:
+../src/entorhinal_cortex.h:27:37: error: ‘e_i_p’ does not name a type
+    double e_i_p[2] = new double[2]; e_i_p[0] = 0.0; e_i_p[1] = 1.0;//= {0.0, 0.0};
+                                     ^
+../src/entorhinal_cortex.h:27:53: error: ‘e_i_p’ does not name a type
+    double e_i_p[2] = new double[2]; e_i_p[0] = 0.0; e_i_p[1] = 1.0;//= {0.0, 0.0};
+                                                     ^
+../src/entorhinal_cortex.h:27:34: error: array must be initialized with a brace-enclosed initializer
+    double e_i_p[2] = new double[2]; e_i_p[0] = 0.0; e_i_p[1] = 1.0;//= {0.0, 0.0};
+                                  ^
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+21:40:24 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:40:52 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:325:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:47:30 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:05 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:327:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:51:38 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:327:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:52:16 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:327:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+21:53:02 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:326:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:327:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
+22:31:04 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:294:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:295:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:300:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:301:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:307:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:308:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:330:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:331:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+22:31:24 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:294:85: error: invalid types ‘double [total_dir][2][int*]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
+                                                                                     ^
+../src/entorhinal_cortex.cpp:295:85: error: invalid types ‘double [total_dir][2][int*]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
+                                                                                     ^
+../src/entorhinal_cortex.cpp:300:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:301:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:307:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:308:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:330:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:331:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+make: *** [src/entorhinal_cortex.o] Error 1
+22:31:48 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:300:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:301:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:307:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[&current_direction][0];
+                                                                                      ^
+../src/entorhinal_cortex.cpp:308:86: error: invalid types ‘double [total_dir][2][int**]’ for array subscript
+     grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[&current_direction][1];
+                                                                                      ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:330:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:331:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+make: *** [src/entorhinal_cortex.o] Error 1
+src/subdir.mk:33: recipe for target 'src/entorhinal_cortex.o' failed
+22:32:15 **** Incremental Build of configuration Debug for project neural_engine ****
+make all 
+Building file: ../src/entorhinal_cortex.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/entorhinal_cortex.d" -MT"src/entorhinal_cortex.o" -o "src/entorhinal_cortex.o" "../src/entorhinal_cortex.cpp"
+In file included from ../src/entorhinal_cortex.cpp:3:0:
+../src/matplotlibcpp.h: In constructor ‘matplotlibcpp::detail::_interpreter::_interpreter()’:
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+      PyObject_CallMethod(matplotlib, "use", "s", s_backend.c_str());
+                                                                   ^
+../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
+../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+  double Cm_exc = 211.389, Cm_inh = 227.3;
+                           ^
+../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+  double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
+                                           ^
+../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
+../src/entorhinal_cortex.cpp:330:9: warning: unused variable ‘W’ [-Wunused-variable]
+  double W = 10.0;
+         ^
+../src/entorhinal_cortex.cpp:331:9: warning: unused variable ‘Z’ [-Wunused-variable]
+  double Z = 0.02;
+         ^
+../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
+../src/entorhinal_cortex.cpp:293:78: warning: ‘current_direction’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     *current_direction = (grid_top_row + grid_offset + (int) col) % total_dir;
+                                                                              ^
+Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building target: neural_engine
+Invoking: GCC C++ Linker
+g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hippocampus.o ./src/main.o ./src/motor_control.o ./src/test.o ./src/vision.o   -lopencv_core -lpython2.7 -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: neural_engine
+ 
