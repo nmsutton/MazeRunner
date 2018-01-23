@@ -1,4 +1,4 @@
-22:32:15 **** Incremental Build of configuration Debug for project neural_engine ****
+23:38:26 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/entorhinal_cortex.cpp
 Invoking: GCC C++ Compiler
@@ -17,16 +17,12 @@ In file included from ../src/entorhinal_cortex.cpp:3:0:
   double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
                                            ^
 ../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
-../src/entorhinal_cortex.cpp:330:9: warning: unused variable ‘W’ [-Wunused-variable]
+../src/entorhinal_cortex.cpp:333:9: warning: unused variable ‘W’ [-Wunused-variable]
   double W = 10.0;
          ^
-../src/entorhinal_cortex.cpp:331:9: warning: unused variable ‘Z’ [-Wunused-variable]
+../src/entorhinal_cortex.cpp:334:9: warning: unused variable ‘Z’ [-Wunused-variable]
   double Z = 0.02;
          ^
-../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells***, int, int, double, double)’:
-../src/entorhinal_cortex.cpp:293:78: warning: ‘current_direction’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-     *current_direction = (grid_top_row + grid_offset + (int) col) % total_dir;
-                                                                              ^
 Finished building: ../src/entorhinal_cortex.cpp
  
 Building target: neural_engine
@@ -35,5 +31,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hi
 Finished building target: neural_engine
  
 
-22:32:20 Build Finished (took 4s.447ms)
+23:38:30 Build Finished (took 4s.674ms)
 

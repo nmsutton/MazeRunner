@@ -266,14 +266,17 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 	/*
 	 * Initially generate default twisted torus locations, for initial work the cells will be on a 2d
 	 * sheet for math convenience but a 3d torus can be added later.
+	 *
+	 * Note: in grid_row, grid_offset, and current_direction calculations +1, -1 are to have a starting index of 1 not 0 for
+	 * modulo calculation.
 	 */
 
 	double row_length = floor(sqrt(GRID_POPULATION_SIZE));
 	double row = 0, col = 0;
 	int grid_row = 0, grid_offset = 0, total_dir = 8;
 	int grid_offset_max = 8, grid_top_row = 7, grid_middle_row = 3;
-	int * current_direction;
-	double grid_row_size = 3.0;
+	int current_direction = 0;
+	int grid_max_row = 3.0;
 	double stagger = 0;
 	double left[2] = {-1.0, 0.0}, right[2] = {1.0, 0.0}, center[2] = {0.0, 0.0}, up[2] = {0.0, 1.0}, down[2] = {0.0, -1.0};
 	double directions[total_dir][2] = {{down[0], down[1]}, {down[0], down[1]}, {left[0], left[1]}, {center[0], center[1]},
@@ -286,26 +289,26 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 		{
 			row = floor(j / row_length);
 			col = j - (row*row_length);
-			grid_row = floor(j / grid_row_size);
-			grid_offset = grid_row % grid_offset_max;
-			if (((int) row % 3) < 0.2)
+			grid_row = (((int) row) % grid_max_row);
+			grid_offset = ((grid_row) % grid_offset_max);
+			if (row > 3 && ((int) row % 3) < 0.2)
 				{
-				*current_direction = (grid_top_row + grid_offset + (int) col) % total_dir;
-				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[*current_direction][0];
-				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[*current_direction][1];
+				current_direction = ((grid_top_row + grid_offset + (int) col) % total_dir);
+				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
+				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
 				}
-			else if (((int) row % 2) < 0.2)
+			else if (row > 2 && ((int) row % 2) < 0.2)
 				{
-				*current_direction = (grid_middle_row + grid_offset + (int) col) % total_dir;
-				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[*current_direction][0];
-				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[*current_direction][1];
+				current_direction = ((grid_middle_row + grid_offset + (int) col) % total_dir);
+				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
+				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
 				stagger = .5 * row_spacing;
 				}
 			else
 				{
-				*current_direction = (grid_offset + (int) col) % total_dir;
-				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[*current_direction][0];
-				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[*current_direction][1];
+				current_direction = ((grid_offset + (int) col) % total_dir);
+				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
+				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
 				stagger = 0;
 				}
 			grid_cell_populations[(int) i][(int) j]->pos_x = (col * row_spacing) + stagger;
@@ -314,7 +317,7 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 
 			// print locations
 			//cout << " i: " << i << " j: " << j << " x: " << grid_cell_populations[(int) i][(int) j]->pos_x << " y: " << grid_cell_populations[(int) i][(int) j]->pos_y << "\n";
-			cout << " i: " << i << " j: " << j << "||\t\t\te_i_p[0] " << grid_cell_populations[(int) i][(int) j]->e_i_p[0] << "\t\t\t\t||\t\t\t\te_i_p[1]:   " << grid_cell_populations[(int) i][(int) j]->e_i_p[1] << "\n";
+			cout << " i: " << i << " j: " << j << "||" << current_direction << "||" << grid_offset << "||" << col << "\te_i_p[0] " << grid_cell_populations[(int) i][(int) j]->e_i_p[0] << "\t\t||\t\te_i_p[1]:   " << grid_cell_populations[(int) i][(int) j]->e_i_p[1] << "\n";
 		}
 	}
 }
