@@ -148,6 +148,9 @@ void entorhinal_cortex::move_place(int pop_i, string direction)
 
 	deactivation_position = (prior_bump_location[1]*GRID_POPULATION_HORIZ_SIZE) + prior_bump_location[0];
 	grid_cell_populations[pop_i][deactivation_position]->Iext = deactivation_voltage;
+
+	// below not actual bump just testing
+	prior_bump_location[0] = neuron_targets[0][0]; prior_bump_location[1] = neuron_targets[0][1];
 }
 
 void entorhinal_cortex::movement_test(int time_unit)
@@ -480,7 +483,8 @@ void entorhinal_cortex::spike_train() {
 				integrate_const( rk2 , sys2 , *x , t , (t+dt) , dt);
 			}
 		}
-		x = &grid_cell_populations[0][18]->V;
+		//x = &grid_cell_populations[0][18]->V;
+		x = &grid_cell_populations[0][7]->V;
 		x_data.push_back(*x);
 	}
 
