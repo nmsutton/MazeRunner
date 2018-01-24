@@ -298,7 +298,7 @@ void entorhinal_cortex::compute_cell_locations(entorhinal_cortex::grid_cells ***
 				grid_cell_populations[(int) i][(int) j]->e_i_p[1] = directions[current_direction][1];
 				cout << "row "<<row<<" and 3\t";
 				}
-			else if (row >= .9 && (((int) row + 1) % 2) < 0.2)
+			else if (row >= .9 && (((int) row + 1) % 3) > 1.8 && (((int) row + 1) % 3) < 2.2)
 				{
 				current_direction = ((grid_middle_row + grid_offset + (int) col) % total_dir);
 				grid_cell_populations[(int) i][(int) j]->e_i_p[0] = directions[current_direction][0];
