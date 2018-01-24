@@ -100,8 +100,8 @@ void entorhinal_cortex::move_place(int pop_i, string direction)
 	 * grid group sizes
 	 */
 
-	int neuron_targets[2][2];
-	int targets_size = sizeof(neuron_targets) / sizeof(int);
+	int targets_size = 2;//sizeof(neuron_targets) / sizeof(int);
+	int neuron_targets[targets_size][2];
 	int neuron_position, deactivation_position;
 	double deactivation_voltage;
 	deactivation_voltage = entorhinal_cortex::deactivation_voltage;
@@ -164,6 +164,24 @@ void entorhinal_cortex::movement_test(int time_unit)
 	case 141 ... 160: {move_place(0, 12, 0, 17);break;}
 	case 161 ... 180: {move_place(0, 17, 0, 18);break;}
 	case 181 ... 199: {move_place(0, 18, 0, 23);break;}
+	}
+
+}
+
+void entorhinal_cortex::movement_test_2(int time_unit)
+{
+	switch(time_unit)
+	{
+	case 0 ... 20: {move_place(0, "up");break;}
+	case 21 ... 40: {move_place(0, "right");break;}
+	case 41 ... 60: {move_place(0, "down");break;}
+	case 61 ... 80: {move_place(0, "left");break;}
+	case 81 ... 100: {move_place(0, "right");break;}
+	case 101 ... 120: {move_place(0, "up");break;}
+	case 121 ... 140: {move_place(0, "left");break;}
+	case 141 ... 160: {move_place(0, "down");break;}
+	case 161 ... 180: {move_place(0, "up");break;}
+	case 181 ... 199: {move_place(0, "down");break;}
 	}
 
 }
@@ -449,7 +467,8 @@ void entorhinal_cortex::spike_train() {
 	for (int i = 0; i < time_span; i++) {
 		t += dt;
 
-		movement_test(i);
+		//movement_test(i);
+		movement_test_2(i);
 		time_step();
 
 		for (int i = 0; i < GRID_POPULATION_NUMBER; i++)
