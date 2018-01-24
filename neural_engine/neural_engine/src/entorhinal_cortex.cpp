@@ -10,10 +10,19 @@ namespace plt = matplotlibcpp;
 
 entorhinal_cortex::entorhinal_cortex()
 {
+	/*
+	 * Starting bump location is set for testing to intitialize attractor net.
+	 * Automated starting location at beginning or other area could be added later.
+	 */
+
 	for (int i = 0; i < GRID_POPULATION_NUMBER; i++) {
 		new_pop = create_grid_population();
 		grid_cell_populations[i] = new_pop;
 	}
+
+	// Starting bump location
+	bump_centriod_location[0] = 1; //x
+	bump_centriod_location[1] = 1; //y
 }
 
 entorhinal_cortex::~entorhinal_cortex()
@@ -79,6 +88,66 @@ void entorhinal_cortex::move_place(int i, int j, int i2, int j2)
 	grid_cell_populations[i][j]->Iext = deactivation_voltage;
 	//grid_cell_populations[i2][j2]->Iext = I_const + I_theta + *I_vel + *I_place;
 	grid_cell_populations[i2][j2]->Iext = I_const + I_theta + I_vel + I_place;
+}
+
+void entorhinal_cortex::move_place(int pop_i, string direction)
+{
+	/*
+	 * Areas to investigate: Add decay of firing without input that automatically extinguishes
+	 * prior active bump location firing? Firing will stop anyway with current formulas if there
+	 * is not input?
+	 * Note: look into avoiding hard coding neuron_targets size for ability to test different
+	 * grid group sizes
+	 */
+
+	int neuron_targets[2][2];
+	int targets_size = sizeof(neuron_targets) / sizeof(int);
+	int neuron_position, deactivation_position;
+	double deactivation_voltage;
+	deactivation_voltage = entorhinal_cortex::deactivation_voltage;
+	double activation_voltage;
+	activation_voltage = entorhinal_cortex::activation_voltage;
+
+	if (direction == "up")
+	{
+		neuron_targets[0][0] = bump_centriod_location[0] - 1;
+		neuron_targets[0][1] = bump_centriod_location[1] + 1;
+		neuron_targets[1][0] = bump_centriod_location[0];
+		neuron_targets[1][1] = bump_centriod_location[1] + 1;
+	}
+	else if (direction == "down")
+	{
+		neuron_targets[0][0] = bump_centriod_location[0] - 1;
+		neuron_targets[0][1] = bump_centriod_location[1] - 1;
+		neuron_targets[1][0] = bump_centriod_location[0];
+		neuron_targets[1][1] = bump_centriod_location[1] - 1;
+	}
+	else if (direction == "left")
+	{
+		neuron_targets[0][0] = bump_centriod_location[0] - 1;
+		neuron_targets[0][1] = bump_centriod_location[1];
+		neuron_targets[1][0] = -1;
+		neuron_targets[1][1] = -1;
+	}
+	else if (direction == "right")
+	{
+		neuron_targets[0][0] = bump_centriod_location[0] + 1;
+		neuron_targets[0][1] = bump_centriod_location[1];
+		neuron_targets[1][0] = -1;
+		neuron_targets[1][1] = -1;
+	}
+
+	for (int i = 0; i < targets_size; i++)
+	{
+		if (neuron_targets[i][1] != -1)
+		{
+			neuron_position = (neuron_targets[i][1]*GRID_POPULATION_HORIZ_SIZE) + neuron_targets[i][0];
+			grid_cell_populations[pop_i][neuron_position]->Iext = activation_voltage;
+		}
+	}
+
+	deactivation_position = (prior_bump_location[1]*GRID_POPULATION_HORIZ_SIZE) + prior_bump_location[0];
+	grid_cell_populations[pop_i][deactivation_position]->Iext = deactivation_voltage;
 }
 
 void entorhinal_cortex::movement_test(int time_unit)

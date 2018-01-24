@@ -42,7 +42,8 @@ using namespace boost::numeric::odeint;
 		double deactivation_voltage = 0.0;
 		double activation_voltage = 50.1;
 		hippocampus * hippocampus_module;
-		//int active_grid_cell[2] = {{0,0}};
+		int bump_centriod_location[2] = {0, 0}; // {x, y}
+		int prior_bump_location[2] = {0, 0};
 
 		entorhinal_cortex();
 		~entorhinal_cortex();
@@ -64,6 +65,7 @@ using namespace boost::numeric::odeint;
 		double dirac(double t1, double t2);
 		void movement_test(int time_unit);
 		void move_place(int i, int j, int i2, int j2);
+		void move_place(int pop_i, string direction);
 		void set_hippocampus_module(hippocampus * hippocampus_module_ptr);
 
 		int time_span = 200;//200;

@@ -1,4 +1,4 @@
-19:53:20 **** Incremental Build of configuration Debug for project neural_engine ****
+23:37:14 **** Incremental Build of configuration Debug for project neural_engine ****
 make all 
 Building file: ../src/entorhinal_cortex.cpp
 Invoking: GCC C++ Compiler
@@ -10,20 +10,25 @@ In file included from ../src/entorhinal_cortex.cpp:3:0:
                                                                    ^
 ../src/matplotlibcpp.h:95:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
 ../src/entorhinal_cortex.cpp: In member function ‘void entorhinal_cortex::time_step()’:
-../src/entorhinal_cortex.cpp:123:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
+../src/entorhinal_cortex.cpp:192:27: warning: unused variable ‘Cm_inh’ [-Wunused-variable]
   double Cm_exc = 211.389, Cm_inh = 227.3;
                            ^
-../src/entorhinal_cortex.cpp:124:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
+../src/entorhinal_cortex.cpp:193:43: warning: unused variable ‘g_EE’ [-Wunused-variable]
   double * g_AMPA, * g_NMDA, * g_GABA_A, * g_EE;
                                            ^
 ../src/entorhinal_cortex.cpp: In static member function ‘static void entorhinal_cortex::sys(const state_type&, entorhinal_cortex::state_type&, double)’:
-../src/entorhinal_cortex.cpp:336:9: warning: unused variable ‘W’ [-Wunused-variable]
+../src/entorhinal_cortex.cpp:405:9: warning: unused variable ‘W’ [-Wunused-variable]
   double W = 10.0;
          ^
-../src/entorhinal_cortex.cpp:337:9: warning: unused variable ‘Z’ [-Wunused-variable]
+../src/entorhinal_cortex.cpp:406:9: warning: unused variable ‘Z’ [-Wunused-variable]
   double Z = 0.02;
          ^
 Finished building: ../src/entorhinal_cortex.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/include/opencv -I/usr/include/plplot -I/usr/include/python2.7 -I/CompNeuro/Software/General/maze_runner/blank_extra -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
  
 Building target: neural_engine
 Invoking: GCC C++ Linker
@@ -31,5 +36,5 @@ g++ -L/usr/include/opencv -o "neural_engine"  ./src/entorhinal_cortex.o ./src/hi
 Finished building target: neural_engine
  
 
-19:53:25 Build Finished (took 5s.462ms)
+23:37:23 Build Finished (took 9s.588ms)
 
