@@ -11,7 +11,7 @@ Currently included:
 * Wall collision detection 
 * Ability to include different mazes. Could be expanded into the morris water maze, etc.
 * Movement controls are working successfully
-* Maze has been tested and gone through to the exit successfully
+* Maze has been tested in the simulation and gone through to the exit successfully
 
 ## Neural Computation
 
