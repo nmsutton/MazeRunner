@@ -44,10 +44,10 @@ Dependencies needed for compiling: Boost, Odeint, OpenCV, Matplotlibcpp. Also pl
 ## Video Samples:
 
 <center>
-<a href="https://gfycat.com/ThornyAcceptableIndianglassfish" target="_blank"><img src="http://i.imgur.com/nultxhH.png" alt="gameplay video image" width="360" height="240" border="10"></a>
-<a href="https://gfycat.com/SnarlingIllinformedGibbon" target="_blank"><img src="http://i.imgur.com/ssjSamF.png" alt="gameplay video image" width="360" height="240" border="10"></a>
-<a href="https://gfycat.com/InfantileVapidIvorygull" target="_blank"><img src="http://i.imgur.com/uNXdr0H.png" alt="gameplay video image" width="360" height="240" border="10"></a>
-<a href="https://gfycat.com/ComplicatedAppropriateIrishdraughthorse" target="_blank"><img src="http://i.imgur.com/nJyybdQ.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://www.youtube.com/watch?v=IYpy0qrlUN0" target="_blank"><img src="http://i.imgur.com/nultxhH.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://www.youtube.com/watch?v=fH9sd3Jrw2g" target="_blank"><img src="http://i.imgur.com/ssjSamF.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://www.youtube.com/watch?v=n_CX485VTbI" target="_blank"><img src="http://i.imgur.com/uNXdr0H.png" alt="gameplay video image" width="360" height="240" border="10"></a>
+<a href="https://www.youtube.com/watch?v=vDhPFinVPNg" target="_blank"><img src="http://i.imgur.com/nJyybdQ.png" alt="gameplay video image" width="360" height="240" border="10"></a>
 
 Gabor Filtering:
 
